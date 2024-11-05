@@ -13,6 +13,13 @@ const config: Config = {
         foreground: "var(--foreground)",
         pnk: "#DE3163",
       },
+      backgroundImage: {
+        hero: "url('/images/girl-child-2024/10.jpeg')",
+      },
+      fontFamily: {
+        roboto: ["var(--font-roboto)"],
+        merriweather: ["var(--font-merriweather)"],
+      },
     },
   },
   plugins: [],

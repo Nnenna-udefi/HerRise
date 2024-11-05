@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import WhiteLogo from "@/images/logo-white.png";
+import WhiteLogo from "../../../public/images/logo-white.png";
+import Link from "next/link";
 
 export const Nav = () => {
   return (
@@ -13,12 +14,16 @@ export const Nav = () => {
         className=" w-40 p-0"
       />
 
-      <ul className="flex gap-6 m-auto">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Events</li>
-        <li>Partnerships</li>
-        <li>Contact Us</li>
+      <ul className="flex gap-6 m-auto hover:tracking-wider">
+        <li className="hover:text-gray-600">
+          <Link href="/">Home</Link>
+        </li>
+        <li className="hover:text-gray-600">
+          <Link href="/about">About Us</Link>
+        </li>
+        <li className="hover:text-gray-600">Events</li>
+        <li className="hover:text-gray-600">Partnerships</li>
+        <li className="hover:text-gray-600">Contact Us</li>
       </ul>
     </div>
   );
