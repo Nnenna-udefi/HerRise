@@ -24,10 +24,16 @@ const merriweather = localFont({
   variable: "--font-merriweather",
   weight: "400 600",
 });
+const recoleta = localFont({
+  src: "./fonts/Recoleta-RegularDEMO.otf",
+  variable: "--font-recoleta",
+  weight: "400 600",
+});
 
 export const metadata: Metadata = {
   title: "HerRise Foundation",
-  description: "A Non-Profit Organisation",
+  description:
+    "HerRise Foundation is a non-profit organisation that empowers girls in underserved communities to become confident leaders and changemakers.",
 };
 
 export default function RootLayout({
@@ -38,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${merriweather.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${merriweather.variable} ${recoleta.variable} antialiased`}
       >
         {children}
       </body>

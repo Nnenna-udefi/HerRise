@@ -14,7 +14,7 @@ const config: Config = {
         pnk: "#DE3163",
       },
       backgroundImage: {
-        hero: "url('/images/girl-child-2024/10.jpeg')",
+        hero: "url('/images/medium-shot-black-girls-outdoors.png')",
       },
       fontFamily: {
         roboto: ["var(--font-roboto)"],
