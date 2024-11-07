@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import im1 from "../../../public/images/menstral-hygiene-2023/8.jpeg";
-import im2 from "../../../public/images/girl-child-2023/1.jpeg";
-import im3 from "../../../public/images/girl-child-2024/1.jpeg";
-import im4 from "../../../public/images/lets-talk-period/2.jpeg";
-import im5 from "../../../public/images/menstral-hygiene-2023/3.jpeg";
-import im6 from "../../../public/images/modle-girls-2023/1.jpeg";
+import im1 from "@/assets/images/menstral-hygiene-2023/8.jpeg";
+import im2 from "@/assets/images/girl-child-2023/1.jpeg";
+import im3 from "@/assets/images/girl-child-2024/1.jpeg";
+import im4 from "@/assets/images/lets-talk-period/2.jpeg";
+import im5 from "@/assets/images/menstral-hygiene-2023/3.jpeg";
+import im6 from "@/assets/images/modle-girls-2023/1.jpeg";
 import Image from "next/image";
 
 export const HomeContent = () => {

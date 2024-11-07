@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import WhiteLogo from "../../../public/images/logo-white.png";
+import WhiteLogo from "@/assets/images/logo-white.png";
 import Link from "next/link";
 
 export const Nav = () => {
@@ -22,8 +22,10 @@ export const Nav = () => {
           <Link href="/about">About Us</Link>
         </li>
         <li className="hover:text-gray-600">Events</li>
-        <li className="hover:text-gray-600">Partnerships</li>
-        <li className="hover:text-gray-600">Contact Us</li>
+        <li className="hover:text-gray-600">Articles</li>
+        <li className="hover:text-gray-600">
+          <Link href="/contact-us">Contact Us</Link>
+        </li>
       </ul>
     </div>
   );

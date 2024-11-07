@@ -1,16 +1,16 @@
 import React from "react";
 import { Nav } from "../../components/nav";
-import { About } from "../../components/about";
+import { Contact } from "../../components/contact";
 import { Footer } from "../../components/footer";
 
-const AboutPage = () => {
+const ContactPage = () => {
   return (
     <div>
       <Nav />
-      <About />
+      <Contact />
       <Footer />
     </div>
   );
 };
 
-export default AboutPage;
+export default ContactPage;

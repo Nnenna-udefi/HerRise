@@ -1,69 +1,88 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import Founder from "../../../public/images/founder.jpg";
+import Founder from "@/assets/images/founder.jpg";
+import { motion } from "framer-motion";
 // import HeroImage from "../../../public/images/sexual-productivity/3.jpeg";
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 export const About = () => {
   return (
     <div className="px-10 text-center tracking-wider pt-32 text-gray-700">
       {/* <Image src={HeroImage} alt="hero" className="w-full h-[500px]" /> */}
-      <div>
-        <h1 className="font-bold text-4xl my-4">About Us</h1>
+      <motion.div
+        variants={container}
+        viewport={{ once: true }}
+        whileInView="show"
+        initial="hidden"
+      >
+        <div>
+          <h1 className="font-bold text-4xl my-4">About Us</h1>
 
-        <p>
-          HerRise Foundation empowers girls in underserved communities to become
-          confident leaders and changemakers. Through programs focused on
-          quality education (SDG 4), gender equality (SDG 5), and climate action
-          (SDG 13), we break down barriers, shatter taboos, and equip girls with
-          the skills to lead, innovate, and build sustainable futures for
-          themselves and their communities. Our mission is to inspire
-          resilience, leadership, and purpose in every girl we reach.
-        </p>
-      </div>
-      <div>
-        <h2 className="font-bold text-2xl my-4">Mission statement</h2>
+          <p>
+            HerRise Foundation empowers girls in underserved communities to
+            become confident leaders and changemakers. Through programs focused
+            on quality education (SDG 4), gender equality (SDG 5), and climate
+            action (SDG 13), we break down barriers, shatter taboos, and equip
+            girls with the skills to lead, innovate, and build sustainable
+            futures for themselves and their communities. Our mission is to
+            inspire resilience, leadership, and purpose in every girl we reach.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-bold text-2xl my-4">Mission statement</h2>
 
-        <p>
-          Empowering girls to lead, innovate, and drive sustainable change in
-          their communities.
-        </p>
-      </div>
-      <div>
-        <h2 className="font-bold text-2xl my-4">Vision statement </h2>
+          <p>
+            Empowering girls to lead, innovate, and drive sustainable change in
+            their communities.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-bold text-2xl my-4">Vision statement </h2>
 
-        <p>
-          A world where every girl is empowered to rise, lead, and shape a
-          sustainable future.
-        </p>
-      </div>
-
-      <div>
-        <h2 className="font-bold text-2xl my-4">Our core values</h2>
-
-        <p className="font-semibold">
-          Empowerment, Inclusivity, Resilience. Co-operation and Collaboration
-        </p>
-
-        <p>
-          {" "}
-          At HerRise Foundation, we believe in empowering every girl to reach
-          her full potential, fostering inclusivity to create equal
-          opportunities, and building resilience to overcome challenges and
-          drive lasting change.
-        </p>
+          <p>
+            A world where every girl is empowered to rise, lead, and shape a
+            sustainable future.
+          </p>
+        </div>
 
         <div>
-          <h2 className="font-bold text-2xl my-4">Our Thematic Areas</h2>
+          <h2 className="font-bold text-2xl my-4">Our core values</h2>
 
-          <ul>
-            <li>Education and Leadership Development</li>
-            <li>Gender Equality and Advocacy</li>
-            <li>Menstrual Hygiene and Education</li>
-            <li>Sexual and Reproductive Health Rights</li>
-            <li>Climate Action and Environmental Stewardship</li>
-          </ul>
+          <p className="font-semibold">
+            Empowerment, Inclusivity, Resilience. Co-operation and Collaboration
+          </p>
+
+          <p>
+            {" "}
+            At HerRise Foundation, we believe in empowering every girl to reach
+            her full potential, fostering inclusivity to create equal
+            opportunities, and building resilience to overcome challenges and
+            drive lasting change.
+          </p>
+
+          <div>
+            <h2 className="font-bold text-2xl my-4">Our Thematic Areas</h2>
+
+            <ul>
+              <li>Education and Leadership Development</li>
+              <li>Gender Equality and Advocacy</li>
+              <li>Menstrual Hygiene and Education</li>
+              <li>Sexual and Reproductive Health Rights</li>
+              <li>Climate Action and Environmental Stewardship</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="text-left my-12">
         <h2 className="text-5xl text-center mt-8 mb-4">Meet the Founder</h2>
@@ -77,7 +96,12 @@ export const About = () => {
               className="w-full  border rounded-lg border-r-8 border-gray-500"
             />
           </div>
-          <div className="tracking-wider md:w-[50%] w-full">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="tracking-wider md:w-[50%] w-full"
+          >
             <p className="leading-8">
               Nwankwo Praise Chidiebube is a passionate advocate for gender
               equality and youth empowerment, driven by a deep-seated commitment
@@ -105,7 +129,7 @@ export const About = () => {
               to breaking taboos, fostering open dialogue, and inspiring a new
               generation of resilient young women.
             </p>
-          </div>
+          </motion.div>
         </div>
         <p className="mt-3 leading-8">
           Praise&#39;s emotional connection to HerRise Foundation is rooted in
