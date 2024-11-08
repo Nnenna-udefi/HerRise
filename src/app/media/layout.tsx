@@ -2,9 +2,8 @@ import { ShellLayout } from "@/components/shared/organism/sharedLayout";
 import { createMetaData } from "@/utils/helpers";
 
 export const metadata = createMetaData({
-  title: "About Us | HerRise",
-  description:
-    "HerRise Foundation is a non-profit organisation that empowers girls in underserved communities to become confident leaders and changemakers.",
+  title: "Media | HerRise",
+  description: "A picture Gallery of our Foundation's event so far",
 });
 
 export default ShellLayout;
