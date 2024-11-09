@@ -22,7 +22,7 @@ export const Nav = () => {
           <Link href="/about">About Us</Link>
         </li>
         <li className="hover:text-gray-600">
-          <Link href="/article">Articles</Link>
+          <Link href="/programs">Programs</Link>
         </li>
         <li className="hover:text-gray-600">
           <Link href="/media">Media</Link>

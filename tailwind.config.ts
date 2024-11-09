@@ -15,6 +15,7 @@ const config: Config = {
       },
       backgroundImage: {
         hero: "url('/images/medium-shot-black-girls-outdoors.png')",
+        hero2: "url('/images/6.jpeg')",
       },
       fontFamily: {
         roboto: ["var(--font-roboto)"],
