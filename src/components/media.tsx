@@ -33,7 +33,7 @@ export const Media = () => {
 
   const closeModal = () => {
     setSelectedImage(null);
-    router.push("/media", undefined);
+    router.replace("/media", undefined);
   };
   return (
     <div>

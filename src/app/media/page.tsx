@@ -1,13 +1,16 @@
 import { Footer } from "@/components/footer";
 import { Media } from "@/components/media";
 import { Nav } from "@/components/nav";
-import React from "react";
+import React, { Suspense } from "react";
 
 const MediaPage = () => {
   return (
     <div>
       <Nav />
-      <Media />
+      <Suspense fallback={<p>Loading Media...</p>}>
+        <Media />
+      </Suspense>
+
       <Footer />
     </div>
   );
