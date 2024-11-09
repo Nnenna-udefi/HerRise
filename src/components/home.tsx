@@ -12,10 +12,10 @@ export const HomeContent = () => {
   return (
     <div className="">
       <div className="md:flex gap-10 text-gray-800 px-12 py-20">
-        <p className="text-5xl tracking-widest font-bold leading-12">
+        <p className="md:text-5xl text-4xl tracking-widest font-bold leading-12">
           HerRise FOUNDATION
         </p>
-        <div className="pt-24 w-full md:w-[50%] font-roboto">
+        <div className="md:pt-24 pt-12 w-full md:w-[50%] font-roboto">
           <p className="tracking-widest leading-7">
             HerRise Foundation empowers girls in underserved communities to
             become confident leaders and changemakers. Through programs focused

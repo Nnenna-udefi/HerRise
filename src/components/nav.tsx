@@ -1,35 +1,64 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import WhiteLogo from "@/assets/images/logo-white.png";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 export const Nav = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+  const navItems = [
+    { id: 1, text: "Home", href: "/" },
+    { id: 2, text: "About Us", href: "/about" },
+    { id: 3, text: "Programs", href: "/programs" },
+    { id: 4, text: "Media", href: "/media" },
+    { id: 5, text: "Contact Us", href: "/contact-us" },
+  ];
   return (
-    <div className="bg-pnk p-2 flex text-white items-center fixed w-full">
+    <div className="bg-pnk p-2 flex justify-between text-white items-center fixed w-full">
       <Image
         src={WhiteLogo}
         alt="logo"
         width={200}
         height={100}
-        className="w-40 p-0"
+        className="w-40 m-0 p-0"
       />
 
-      <ul className="flex gap-6 justify-evenly w-full hover:tracking-wider">
-        <li className="hover:text-gray-600">
-          <Link href="/">Home</Link>
-        </li>
-        <li className="hover:text-gray-600">
-          <Link href="/about">About Us</Link>
-        </li>
-        <li className="hover:text-gray-600">
-          <Link href="/programs">Programs</Link>
-        </li>
-        <li className="hover:text-gray-600">
-          <Link href="/media">Media</Link>
-        </li>
-        <li className="hover:text-gray-600">
-          <Link href="/contact-us">Contact Us</Link>
-        </li>
+      <ul className="md:flex hidden gap-6 justify-evenly w-full hover:tracking-wider">
+        {navItems.map((items) => (
+          <li key={items.id} className="hover:text-gray-600">
+            <Link href={items.href}>{items.text}</Link>
+          </li>
+        ))}
+      </ul>
+
+      <div onClick={handleNav} className="block md:hidden cursor-pointer">
+        {nav ? <X size={20} className="text-white" /> : <Menu size={20} />}
+      </div>
+      <ul
+        className={
+          nav
+            ? "fixed md:hidden left-0 top-0 w-[60%] pl-4 h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            : "ease-in-out w-[60%]  duration-500 fixed top-0 bottom-0 left-[-100%]"
+        }
+      >
+        <Image
+          src={WhiteLogo}
+          alt="logo"
+          width={200}
+          height={100}
+          className="w-40 p-0"
+        />
+        {/* Mobile Navigation Items */}
+        {navItems.map((item) => (
+          <li key={item.id} className="hover:text-pnk py-2">
+            <Link href={item.href}>{item.text}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

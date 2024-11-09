@@ -7,9 +7,16 @@ import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <div className="bg-black text-white py-10 px-12">
+    <div className="bg-black text-white py-10 md:px-12 px-8">
+      <Image
+        src={WhiteLogo}
+        alt="logo"
+        width={200}
+        height={100}
+        className="block md:hidden"
+      />
       <div className="flex justify-between items-center">
-        <h1 className="text-4xl tracking-widest w-[30%] text-white">
+        <h1 className="text-4xl tracking-widest w-full md:w-[30%] text-white">
           Join Our Transformation
         </h1>
         <Image
@@ -17,10 +24,10 @@ export const Footer = () => {
           alt="logo"
           width={200}
           height={100}
-          className="text-right"
+          className="text-right md:block hidden"
         />
       </div>
-      <div className="flex gap-20">
+      <div className="md:flex block gap-20">
         <div>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
@@ -35,14 +42,14 @@ export const Footer = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"
           >
-            <button className="rounded-2xl border mt-8 border-gray-500 px-8 py-3">
+            <button className="rounded-2xl border mt-2 md:mt-8 border-gray-500 px-8 py-3">
               Become a Partner
             </button>
           </Link>
         </div>
 
-        <div className="flex flex-col gap-3">
-          <h2 className="text-xl text-white">About</h2>
+        <div className="flex flex-col gap-3 mt-4 md:mt-0">
+          <h2 className="text-xl text-white">About Us</h2>
 
           <p>Who We Are</p>
           <p>Meet The Founder</p>
@@ -58,7 +65,7 @@ export const Footer = () => {
           <ContactProp Icon={Phone} details="+234 813 027 6164" />
 
           <p>You can also follow us on our social media platforms:</p>
-          <div className="flex gap-3 my-4">
+          <div className="flex justify-center gap-3 my-4">
             <Link href="https://www.instagram.com/herrise_foundation?igsh=MWM1b296dHdpaTVoeA==">
               {" "}
               <Instagram />
@@ -67,7 +74,7 @@ export const Footer = () => {
               <Facebook />
             </Link>
           </div>
-          <p className="text-right">
+          <p className="md:text-right text-center">
             &#169; 2024 HerRise Foundation. All Rights Reserved.
           </p>
         </div>
