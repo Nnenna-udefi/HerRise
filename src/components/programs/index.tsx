@@ -15,7 +15,7 @@ export const Programs = () => {
         </div>
       </section>
 
-      <section className="md:px-14 px-6 py-20">
+      <section className="md:px-14 px-6 py-20 bg-white">
         <p className="text-center leading-12 md:w-[70%] w-full text-2xl">
           Our programs aim at tackling some of the most pressing issues facing
           girls today, from quality education and gender equality to climate

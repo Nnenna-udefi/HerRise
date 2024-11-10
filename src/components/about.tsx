@@ -17,7 +17,7 @@ const container = {
 
 export const About = () => {
   return (
-    <div className="px-10 text-center tracking-wider pt-32 text-gray-700">
+    <div className="px-10 text-center bg-white tracking-wider pt-32 text-gray-700">
       {/* <Image src={HeroImage} alt="hero" className="w-full h-[500px]" /> */}
       <motion.div
         variants={container}

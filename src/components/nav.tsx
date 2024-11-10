@@ -29,9 +29,12 @@ export const Nav = () => {
         className="w-20"
       />
 
-      <ul className="md:flex hidden gap-6 justify-evenly w-full hover:tracking-wider">
+      <ul className="md:flex hidden gap-6  w-full hover:tracking-wider">
         {navItems.map((items) => (
-          <li key={items.id} className="hover:text-gray-600">
+          <li
+            key={items.id}
+            className="hover:text-gray-600 active:text-gray-600 active:text-uppercase "
+          >
             <Link href={items.href}>{items.text}</Link>
           </li>
         ))}

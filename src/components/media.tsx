@@ -43,7 +43,7 @@ export const Media = () => {
         </h1>
       </div>
 
-      <div className="py-12 px-14">
+      <div className="py-12 px-14 bg-white">
         <h2 className="uppercase text-2xl text-center ">image gallery</h2>
         <div className="my-4 grid md:grid-cols-4 grid-cols-2 gap-3">
           {gallery.map((med) => (
