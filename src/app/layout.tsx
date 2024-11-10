@@ -31,7 +31,7 @@ const recoleta = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "HerRise Foundation",
+  title: "Home | HerRise Foundation",
   description:
     "HerRise Foundation is a non-profit organisation that empowers girls in underserved communities to become confident leaders and changemakers.",
 };

@@ -37,8 +37,8 @@ export const Media = () => {
   };
   return (
     <div>
-      <div className="h-[500px] bg-pnk">
-        <h1 className="text-white text-6xl pt-48 tracking-widest px-14">
+      <div className="md:h-[500px] h-[350px] bg-pnk">
+        <h1 className="text-white md:text-6xl text-4xl pt-48 tracking-widest px-14">
           HerRise Foundation Media
         </h1>
       </div>
@@ -56,7 +56,7 @@ export const Media = () => {
                 <Image
                   src={med.img}
                   alt="media"
-                  className="w-[300px] h-[300px]"
+                  className="md:w-[300px] md:h-[300px] w-full"
                 />
               </Link>
             </div>

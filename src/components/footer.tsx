@@ -1,29 +1,29 @@
 import Image from "next/image";
 import React from "react";
-import WhiteLogo from "@/assets/images/logo-white.png";
+import PinkLogo from "@/assets/images/logo-pink.png";
 import Link from "next/link";
 import { ContactProp } from "./shared/organism/contactProp";
 import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <div className="bg-black text-white py-10 md:px-12 px-8">
+    <div className="bg-white border-t border-t-gray-700 text-gray-700 py-10 md:px-12 px-8">
       <Image
-        src={WhiteLogo}
+        src={PinkLogo}
         alt="logo"
-        width={200}
-        height={100}
-        className="block md:hidden"
+        width={100}
+        height={50}
+        className="block md:hidden w-20"
       />
       <div className="flex justify-between items-center">
-        <h1 className="text-4xl tracking-widest w-full md:w-[30%] text-white">
+        <h1 className="text-4xl tracking-widest w-full md:w-[30%] text-gray-700">
           Join Our Transformation
         </h1>
         <Image
-          src={WhiteLogo}
+          src={PinkLogo}
           alt="logo"
-          width={200}
-          height={100}
+          width={100}
+          height={50}
           className="text-right md:block hidden"
         />
       </div>
@@ -49,23 +49,24 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-3 mt-4 md:mt-0">
-          <h2 className="text-xl text-white">About Us</h2>
+          <h2 className="text-xl text-gray-800 white">About Us</h2>
 
-          <p>Who We Are</p>
-          <p>Meet The Founder</p>
-          <p>Blog</p>
+          <Link href="/about/#who-we-are">Who We Are</Link>
+          <Link href="/about/#founder">Meet The Founder</Link>
+
+          <Link href="/programs">Our Programs</Link>
         </div>
       </div>
 
       <div className="my-6">
-        <h3 className="text-3xl text-white ">Reach Us</h3>
+        <h3 className="text-3xl text-gray-800 ">Reach Us</h3>
 
         <div className="mt-2">
           <ContactProp Icon={Mail} details="herrisefoundation@gmail.com" />
           <ContactProp Icon={Phone} details="+234 813 027 6164" />
 
           <p>You can also follow us on our social media platforms:</p>
-          <div className="flex justify-center gap-3 my-4">
+          <div className="flex md:justify-normal justify-center gap-3 my-4">
             <Link href="https://www.instagram.com/herrise_foundation?igsh=MWM1b296dHdpaTVoeA==">
               {" "}
               <Instagram />

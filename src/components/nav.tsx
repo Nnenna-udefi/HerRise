@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import WhiteLogo from "@/assets/images/logo-white.png";
+import PinkLogo from "@/assets/images/logo-pink.png";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -19,13 +20,13 @@ export const Nav = () => {
     { id: 5, text: "Contact Us", href: "/contact-us" },
   ];
   return (
-    <div className="bg-pnk p-2 flex justify-between text-white items-center fixed w-full">
+    <div className="bg-pnk px-8 pt-2 pb-4 flex justify-between text-white items-center fixed w-full">
       <Image
         src={WhiteLogo}
         alt="logo"
         width={200}
         height={100}
-        className="w-40 m-0 p-0"
+        className="w-20"
       />
 
       <ul className="md:flex hidden gap-6 justify-evenly w-full hover:tracking-wider">
@@ -42,20 +43,20 @@ export const Nav = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] pl-4 h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed md:hidden left-0 top-0 w-[60%] pl-4 h-full text-gray-700 border-r border-r-gray-700 bg-white ease-in-out duration-500"
             : "ease-in-out w-[60%]  duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
         <Image
-          src={WhiteLogo}
+          src={PinkLogo}
           alt="logo"
           width={200}
           height={100}
-          className="w-40 p-0"
+          className="w-20"
         />
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
-          <li key={item.id} className="hover:text-pnk py-2">
+          <li key={item.id} className="hover:text-pnk hover:font-bold py-2">
             <Link href={item.href}>{item.text}</Link>
           </li>
         ))}

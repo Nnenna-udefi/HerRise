@@ -24,6 +24,7 @@ export const About = () => {
         viewport={{ once: true }}
         whileInView="show"
         initial="hidden"
+        id="who-we-are"
       >
         <div>
           <h1 className="font-bold text-4xl my-4">About Us</h1>
@@ -84,7 +85,7 @@ export const About = () => {
         </div>
       </motion.div>
 
-      <div className="text-left my-12">
+      <div className="text-left my-12" id="founder">
         <h2 className="text-5xl text-center mt-8 mb-4">Meet the Founder</h2>
         <div className="md:flex justify-between gap-12">
           <div className="md:w-[50%] w-full">
