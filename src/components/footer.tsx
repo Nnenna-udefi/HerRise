@@ -62,8 +62,14 @@ export const Footer = () => {
         <h3 className="text-3xl text-gray-800 ">Reach Us</h3>
 
         <div className="mt-2">
-          <ContactProp Icon={Mail} details="herrisefoundation@gmail.com" />
-          <ContactProp Icon={Phone} details="+234 813 027 6164" />
+          <Link href="mailto:herrisefoundation@gmail.com">
+            {" "}
+            <ContactProp Icon={Mail} details="herrisefoundation@gmail.com" />
+          </Link>
+          <Link href="tel:+2348130276164">
+            {" "}
+            <ContactProp Icon={Phone} details="+234 813 027 6164" />
+          </Link>
 
           <p>You can also follow us on our social media platforms:</p>
           <div className="flex md:justify-normal justify-center gap-3 my-4">
