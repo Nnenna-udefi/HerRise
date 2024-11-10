@@ -30,48 +30,48 @@ export const HomeContent = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap w-full">
+      <div className="grid md:grid-cols-3 grid-cols-2 w-full">
         <Image
           src={im1}
           alt="collage"
           width={300}
           height={300}
-          className="w-1/3"
+          className=" w-full"
         />
         <Image
           src={im2}
           alt="collage"
           width={300}
           height={300}
-          className="w-1/3"
+          className=" w-full h-full"
         />
         <Image
           src={im3}
           alt="collage"
           width={300}
           height={300}
-          className="w-1/3"
+          className=" w-full h-full"
         />
         <Image
           src={im4}
           alt="collage"
           width={300}
           height={300}
-          className="w-1/3"
+          className=" w-full h-full"
         />
         <Image
           src={im5}
           alt="collage"
           width={300}
           height={300}
-          className="w-1/3"
+          className=" w-full h-full"
         />
         <Image
           src={im6}
           alt="collage"
           width={300}
           height={300}
-          className="w-1/3"
+          className=" w-full h-full"
         />
       </div>
     </div>
