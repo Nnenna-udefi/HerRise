@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export const HomeContent = () => {
   return (
-    <div className="">
+    <div className="bg-white">
       <div className="md:flex gap-10 text-gray-800 px-12 py-20">
         <p className="md:text-5xl text-4xl tracking-widest font-bold leading-12">
           HerRise FOUNDATION
