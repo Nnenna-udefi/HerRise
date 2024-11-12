@@ -16,11 +16,9 @@ export const HomeContent = () => {
           HerRise FOUNDATION
         </p>
         <div className="md:pt-24 pt-12 w-full md:w-[50%] font-roboto">
-          <p className="tracking-widest leading-7">
-            HerRise Foundation empowers girls in underserved communities to
-            become confident leaders and changemakers. Through programs focused
-            on quality education (SDG 4), gender equality (SDG 5), and climate
-            action (SDG 13)...
+          <p className="tracking-widest leading-7 md:text-xl text-lg">
+            Since 2022, HerRise Foundation has been committed to advancing
+            gender equality, quality education, and climate action.
           </p>
           <Link href="/about">
             <button className="rounded-2xl border mt-8 border-gray-500 px-8 py-3">

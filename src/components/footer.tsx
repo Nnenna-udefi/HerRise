@@ -3,7 +3,7 @@ import React from "react";
 import PinkLogo from "@/assets/images/logo-pink.png";
 import Link from "next/link";
 import { ContactProp } from "./shared/organism/contactProp";
-import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import { Copyright, Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -48,13 +48,12 @@ export const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-3 mt-4 md:mt-0">
-          <h2 className="text-xl text-gray-800 white">About Us</h2>
-
-          <Link href="/about/#who-we-are">Who We Are</Link>
+        <div className="flex text-xl flex-col gap-3 mt-4 md:mt-0">
+          <Link href="/about">About Us</Link>
           <Link href="/about/#founder">Meet The Founder</Link>
-
           <Link href="/programs">Our Programs</Link>
+          <Link href="/programs">Impact Stories</Link>
+          <Link href="/contact-us/#donate">Donate</Link>
         </div>
       </div>
 
@@ -62,9 +61,9 @@ export const Footer = () => {
         <h3 className="text-3xl text-gray-800 ">Reach Us</h3>
 
         <div className="mt-2">
-          <Link href="mailto:herrisefoundation@gmail.com">
+          <Link href="mailto:contact@herrisefoundation.org">
             {" "}
-            <ContactProp Icon={Mail} details="herrisefoundation@gmail.com" />
+            <ContactProp Icon={Mail} details="contact@herrisefoundation.org" />
           </Link>
           <Link href="tel:+2348130276164">
             {" "}
@@ -81,9 +80,10 @@ export const Footer = () => {
               <Facebook />
             </Link>
           </div>
-          <p className="md:text-right text-center">
-            &#169; 2024 HerRise Foundation. All Rights Reserved.
-          </p>
+          <div className="flex gap-3 items-center md:justify-end justify-center">
+            <Copyright />
+            <p>2024 HerRise Foundation. All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </div>

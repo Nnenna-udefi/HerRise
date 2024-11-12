@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import Founder from "@/assets/images/founder.jpg";
 import { motion } from "framer-motion";
-// import HeroImage from "../../../public/images/sexual-productivity/3.jpeg";
 
 const container = {
   hidden: { opacity: 0 },
@@ -17,8 +16,7 @@ const container = {
 
 export const About = () => {
   return (
-    <div className="px-10 text-center bg-white tracking-wider pt-32 text-gray-700">
-      {/* <Image src={HeroImage} alt="hero" className="w-full h-[500px]" /> */}
+    <div className="px-10 md:px-16  bg-white tracking-wider pt-32 text-gray-700">
       <motion.div
         variants={container}
         viewport={{ once: true }}
@@ -27,8 +25,13 @@ export const About = () => {
         id="who-we-are"
       >
         <div>
-          <h1 className="font-bold text-4xl my-4">About Us</h1>
-
+          <h1 className="font-bold text-4xl my-4 text-center">About Us</h1>
+          <p className="pb-4 font-bold">
+            Founded in 2022, HerRise Foundation champions gender equality,
+            quality education, and climate action. Through community-driven
+            programs and initiatives, we work towards a world where women and
+            girls are empowered to lead and thrive.
+          </p>
           <p>
             HerRise Foundation empowers girls in underserved communities to
             become confident leaders and changemakers. Through programs focused
@@ -43,8 +46,10 @@ export const About = () => {
           <h2 className="font-bold text-2xl my-4">Mission statement</h2>
 
           <p>
-            Empowering girls to lead, innovate, and drive sustainable change in
-            their communities.
+            HerRise Foundation is dedicated to creating opportunities, uplifting
+            women and girls, and addressing environmental challenges through
+            impactful initiatives rooted in the Sustainable Development Goals
+            (SDGs).
           </p>
         </div>
         <div>
@@ -74,12 +79,51 @@ export const About = () => {
           <div>
             <h2 className="font-bold text-2xl my-4">Our Thematic Areas</h2>
 
-            <ul>
+            <ul className="list-disc">
               <li>Education and Leadership Development</li>
               <li>Gender Equality and Advocacy</li>
               <li>Menstrual Hygiene and Education</li>
               <li>Sexual and Reproductive Health Rights</li>
               <li>Climate Action and Environmental Stewardship</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="font-bold text-2xl my-4">Focus Areas</h2>
+            <ul className="list-decimal">
+              <li>
+                <span className="text-black font-bold">
+                  {" "}
+                  SDG 4 – Quality Education:{" "}
+                </span>
+                <br />
+                <span>
+                  &quot;We work to ensure inclusive, equitable education for
+                  all, focusing on lifelong learning opportunities.”
+                </span>
+              </li>
+
+              <li>
+                <span className="text-black font-bold">
+                  SDG 5 – Gender Equality:
+                </span>
+                <br />
+                <span>
+                  &quot;Empowering women and girls through advocacy, leadership
+                  programs, and community initiatives.&quot;
+                </span>
+              </li>
+
+              <li>
+                <span className="text-black font-bold">
+                  SDG 13 – Climate Action:
+                </span>
+                <br />
+                <span>
+                  &quot;Taking action on climate change through community
+                  education and sustainable practices.”
+                </span>
+              </li>
             </ul>
           </div>
         </div>
