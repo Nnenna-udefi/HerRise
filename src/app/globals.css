@@ -49,3 +49,6 @@ h5 {
   color: black;
   font-weight: 500;
 }
+* {
+  font-variant-ligatures: none;
+}
