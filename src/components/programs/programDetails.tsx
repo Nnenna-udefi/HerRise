@@ -6,13 +6,11 @@ import { ProgramsBlock } from "@/utils/constant";
 export const ProgramDetails = () => {
   const pathname = usePathname();
   const slug = pathname?.split("/").pop();
-  console.log("Current slug:", slug);
 
-  // Find the specific program based on the slug from the URL
   const program = ProgramsBlock.find((p) => p.slug === slug);
 
   if (!program) {
-    return <p>Loading...</p>; // Optional loading state
+    return <p>Loading...</p>;
   }
 
   return (
