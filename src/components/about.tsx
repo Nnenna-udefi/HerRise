@@ -202,7 +202,7 @@ export const About = () => {
       </div>
 
       <div className="my-6">
-        <h2 className="text-5xl text-center mt-8 mb-4">Meet Our Volunteers</h2>
+        <h2 className="text-5xl text-center mt-8 mb-4">Our Volunteers</h2>
         <Image src={Volunteer} alt="volunteer" className="w-full" />
       </div>
     </div>
