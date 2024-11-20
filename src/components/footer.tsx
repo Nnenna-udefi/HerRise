@@ -27,13 +27,13 @@ export const Footer = () => {
           className="text-right md:block hidden"
         />
       </div>
-      <div className="md:flex block gap-20">
+      <div className="md:flex items-start block gap-20">
         <div>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"
           >
-            <button className="rounded-2xl mr-4 border mt-8 border-gray-500 px-8 py-3">
+            <button className="rounded-2xl mr-4 border  border-gray-500 px-8 py-3">
               Volunteer
             </button>
           </Link>
@@ -48,43 +48,47 @@ export const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex text-xl flex-col gap-3 mt-4 md:mt-0">
+        <div className="flex text-lg flex-col gap-3 mt-4 md:mt-0">
+          <h3 className="text-3xl text-gray-800">Quick Links</h3>
           <Link href="/about">About Us</Link>
           <Link href="/about/#founder">Meet The Founder</Link>
           <Link href="/programs">Our Programs</Link>
           <Link href="/programs">Impact Stories</Link>
           <Link href="/contact-us/#donate">Donate</Link>
         </div>
-      </div>
 
-      <div className="my-6">
-        <h3 className="text-3xl text-gray-800 ">Reach Us</h3>
+        <div className="md:mt-0 mt-6 mb-6">
+          <h3 className="text-3xl text-gray-800 ">Reach Us</h3>
 
-        <div className="mt-2">
-          <Link href="mailto:contact@herrisefoundation.org">
-            {" "}
-            <ContactProp Icon={Mail} details="contact@herrisefoundation.org" />
-          </Link>
-          <Link href="tel:+2348130276164">
-            {" "}
-            <ContactProp Icon={Phone} details="+234 813 027 6164" />
-          </Link>
-
-          <p>You can also follow us on our social media platforms:</p>
-          <div className="flex md:justify-normal justify-center gap-3 my-4">
-            <Link href="https://www.instagram.com/herrise_foundation?igsh=MWM1b296dHdpaTVoeA==">
+          <div className="mt-2">
+            <Link href="mailto:contact@herrisefoundation.org">
               {" "}
-              <Instagram />
+              <ContactProp
+                Icon={Mail}
+                details="contact@herrisefoundation.org"
+              />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=100082207645159">
-              <Facebook />
+            <Link href="tel:+2348130276164">
+              {" "}
+              <ContactProp Icon={Phone} details="+234 813 027 6164" />
             </Link>
-          </div>
-          <div className="flex gap-3 items-center md:justify-end justify-center">
-            <Copyright />
-            <p>2024 HerRise Foundation. All Rights Reserved.</p>
+
+            <p>You can also follow us on our social media platforms:</p>
+            <div className="flex md:justify-normal justify-center gap-3 my-4">
+              <Link href="https://www.instagram.com/herrise_foundation?igsh=MWM1b296dHdpaTVoeA==">
+                {" "}
+                <Instagram />
+              </Link>
+              <Link href="https://www.facebook.com/profile.php?id=100082207645159">
+                <Facebook />
+              </Link>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="flex gap-3 items-center md:justify-end justify-center">
+        <Copyright />
+        <p>2024 HerRise Foundation. All Rights Reserved.</p>
       </div>
     </div>
   );
