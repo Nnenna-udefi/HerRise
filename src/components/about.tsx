@@ -25,7 +25,9 @@ export const About = () => {
         id="who-we-are"
       >
         <div>
-          <h1 className="font-bold text-4xl my-4 text-center">About Us</h1>
+          <h1 className="font-bold md:text-5xl text-4xl my-4 text-center">
+            About Us
+          </h1>
           <p className="pb-4 font-bold">
             Founded in 2022, HerRise Foundation champions gender equality,
             quality education, and climate action. Through community-driven
@@ -130,7 +132,9 @@ export const About = () => {
       </motion.div>
 
       <div className="text-left my-12" id="founder">
-        <h2 className="text-5xl text-center mt-8 mb-4">Meet the Founder</h2>
+        <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
+          Meet the Founder
+        </h2>
         <div className="md:flex justify-between gap-12">
           <div className="md:w-[50%] w-full">
             <Image
@@ -202,7 +206,9 @@ export const About = () => {
       </div>
 
       <div className="my-6">
-        <h2 className="text-5xl text-center mt-8 mb-4">Our Volunteers</h2>
+        <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
+          Our Volunteers
+        </h2>
         <Image src={Volunteer} alt="volunteer" className="w-full" />
       </div>
     </div>
