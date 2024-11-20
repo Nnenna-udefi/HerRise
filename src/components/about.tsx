@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Founder from "@/assets/images/founder.jpg";
 import { motion } from "framer-motion";
-
+import Volunteer from "@/assets/images/volunteers.jpg";
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -199,6 +199,11 @@ export const About = () => {
           Foundation, believing that together, they can build a sustainable and
           equitable future for all.
         </p>
+      </div>
+
+      <div className="my-6">
+        <h2 className="text-5xl text-center mt-8 mb-4">Meet Our Volunteers</h2>
+        <Image src={Volunteer} alt="volunteer" className="w-full" />
       </div>
     </div>
   );
