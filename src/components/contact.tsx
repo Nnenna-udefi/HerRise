@@ -62,7 +62,7 @@ export const Contact = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="pt-10 pb-6 md:flex block justify-between items-center"
       >
-        <div className="md:w-1/3 w-full">
+        <div className="md:w-1/3 mt-4 w-full">
           <h2 className="text-white text-3xl md:text-4xl">Get Involved</h2>
           <p className="text-lg">
             Join our community of volunteers and make a difference in the lives
@@ -78,7 +78,7 @@ export const Contact = () => {
           </Link>
         </div>
 
-        <div className=" md:w-1/3 w-full" id="donate">
+        <div className=" md:w-1/3 mt-4 w-full" id="donate">
           <h2 className="text-white text-3xl md:text-4xl">Donate</h2>
           <p className="text-lg">
             Your support helps us reach more communities and expand our impact.

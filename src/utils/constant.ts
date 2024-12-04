@@ -37,6 +37,10 @@ import img20 from "@/assets/images/sexual-productivity/4.jpeg";
 import img37 from "@/assets/images/sexual-productivity/1.jpeg";
 import img38 from "@/assets/images/sexual-productivity/3.jpeg";
 import img39 from "@/assets/images/sexual-productivity/5.jpeg";
+import img40 from "@/assets/images/breaking-silence/2.png";
+import img41 from "@/assets/images/breaking-silence/6.png";
+import img42 from "@/assets/images/breaking-silence/5.png";
+
 export const gallery = [
   {
     id: 1,
@@ -118,6 +122,18 @@ export const gallery = [
     id: 20,
     img: img20,
   },
+  {
+    id: 21,
+    img: img40,
+  },
+  {
+    id: 22,
+    img: img42,
+  },
+  {
+    id: 23,
+    img: img41,
+  },
 ];
 
 import introImg from "@/assets/images/introduction.jpeg";
@@ -132,6 +148,24 @@ import period1 from "@/assets/images/menstral-hygiene-2023/5.jpeg";
 import logo from "@/assets/images/WhatsApp Image 2024-10-29 at 11.32.29 PM.jpeg";
 
 export const ProgramsBlock = [
+  {
+    img: img40,
+    title: "Breaking the Culture of Silence",
+    slug: "breaking-the-culture-of-silence",
+    shortText:
+      "As part of the 16 Days of Activism against Gender-Based Violence, HerRise Foundation Takes a Stand Against Gender-Based Violence. The team delivered a sensitization program that shed light on the various forms of violence against women and girls",
+    fullText: {
+      paragraphs: [
+        "As part of the 16 Days of Activism against Gender-Based Violence, the HerRise Foundation Team Abuja embarked on a powerful mission to educate and empower students at KEY SPECIAL ACADEMY FCT, ABUJA. Led by the dynamic Mercy Ifeosame, the team delivered a sensitization program that shed light on the various forms of violence against women and girls.",
+        "The interactive session emphasized the importance of breaking the culture of silence that often surrounds gender-based violence. The students were encouraged to speak up and report any instances of violence or abuse, and to support those who may be affected.",
+        "Through this initiative, HerRise Foundation aims to create a safe and supportive environment where women and girls can thrive, not just survive. By educating and empowering young minds, we can work towards a future where gender-based violence is eradicated.",
+        "We are proud of the amazing work our Abuja team is doing to create awareness and promote a safe env Together, we can make a difference and create a world where everyone can live without fear of violence or abuse",
+      ],
+      conclusion:
+        "Join us in the fight against gender-based violence. Let's orange the world.",
+    },
+    imgGallery: [img40, img41, img42],
+  },
   {
     img: introImg,
     title: "Introducing HerRise Foundation",

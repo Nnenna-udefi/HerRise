@@ -6,16 +6,15 @@ import React from "react";
 export const Programs = () => {
   return (
     <div className="pt-24">
-      <section className="relative h-[300px] md:h-[500px]">
-        <div className="absolute md:block hidden inset-0 bg-hero2 bg-left-bottom bg-cover opacity-50"></div>
-        <div className="absolute md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+      <section className=" m-8">
+        <div className="h-[300px] md:h-[500px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
           <h1 className="text-white text-6xl tracking-widest px-14">
             Programs
           </h1>
         </div>
       </section>
 
-      <section className="md:px-14 px-6 py-20 bg-white">
+      <section className="md:px-14 flex flex-col justify-center items-center px-6 py-20 bg-white">
         <p className="text-center leading-12 md:w-[70%] w-full text-2xl">
           Our programs aim at tackling some of the most pressing issues facing
           girls today, from quality education and gender equality to climate
