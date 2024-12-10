@@ -1,5 +1,6 @@
 "use client";
 import { gallery } from "@/utils/constant";
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -36,12 +37,19 @@ export const Media = () => {
     router.replace("/media", undefined);
   };
   return (
-    <div>
-      <div className="md:h-[500px] h-[350px] bg-pnk">
-        <h1 className="text-white md:text-6xl text-4xl pt-48 tracking-widest px-14">
-          HerRise Foundation Media
-        </h1>
-      </div>
+    <div className="pt-24">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className=" m-8"
+      >
+        <div className="h-[300px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+          <h1 className="text-white text-6xl tracking-widest px-14">
+            HerRise Foundation Media
+          </h1>
+        </div>
+      </motion.div>
 
       <div className="py-12 px-14 bg-white">
         <h2 className="uppercase text-2xl text-center ">image gallery</h2>

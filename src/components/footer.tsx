@@ -13,22 +13,12 @@ export const Footer = () => {
         alt="logo"
         width={100}
         height={50}
-        className="block md:hidden w-20"
+        className="w-20"
       />
-      <div className="flex justify-between items-center">
-        <h1 className="text-4xl tracking-widest w-full md:w-[30%] text-gray-700">
-          Join Our Transformation
-        </h1>
-        <Image
-          src={PinkLogo}
-          alt="logo"
-          width={100}
-          height={50}
-          className="text-right md:block hidden"
-        />
-      </div>
-      <div className="md:flex items-start block gap-20">
-        <div>
+
+      <div className="md:flex justify-between gap-10 block ">
+        <div className="p-0">
+          <h1 className="text-3xl text-gray-800">Join Our Transformation</h1>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"

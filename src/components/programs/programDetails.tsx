@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ProgramsBlock } from "@/utils/constant";
+import { motion } from "framer-motion";
 
 export const ProgramDetails = () => {
   const pathname = usePathname();
@@ -12,18 +13,27 @@ export const ProgramDetails = () => {
   if (!program) {
     return <p>Loading...</p>;
   }
-
   return (
     <div className="pt-24">
-      <section className=" m-8">
-        <div className="h-[300px] md:h-[500px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className=" m-8"
+      >
+        <div className="h-[300px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
           <h1 className="text-white text-6xl tracking-widest px-14">
             Programs
           </h1>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="md:px-14 px-6 py-20">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="md:px-14 px-6 py-20"
+      >
         <h2 className="text-5xl text-gray-800">{program.title}</h2>
 
         {program?.fullText?.paragraphs.map((paragraph, index) => (
@@ -48,12 +58,15 @@ export const ProgramDetails = () => {
               <Image
                 src={imgG}
                 alt={program.title}
-                className="w-full md:h-[500px] my-2"
+                layout="responsive"
+                width={500}
+                height={500}
+                className=" my-2"
               />
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

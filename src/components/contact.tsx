@@ -7,24 +7,35 @@ import Link from "next/link";
 
 export const Contact = () => {
   return (
-    <div className="bg-pnk text-white px-6 md:px-14 pt-32 pb-10">
+    <div className="px-6 md:px-14 pt-32 pb-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="m-8"
+      >
+        <div className="h-[300px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+          <h1 className="text-white text-6xl tracking-widest px-14">
+            Contact us
+          </h1>
+        </div>
+      </motion.div>
       <motion.section className="block md:flex justify-between">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="md:w-1/2 w-full "
+          className="md:w-1/2 w-full md:text-lg"
         >
-          <h1 className="text-white text-4xl md:text-5xl">Contact Us</h1>
           <p className="text-3xl md:text-4xl my-6">
             We&apos;d love to hear from you
           </p>
-          <p className="text-xl md:text-2xl">
+          <p>
             Whether you’re new to HerRise or have been with us for years, we’re
             glad you’re here.
           </p>
 
-          <p className="text-2xl my-2">
+          <p className=" my-2">
             Get in touch for more information about our work.
           </p>
         </motion.div>
@@ -60,10 +71,10 @@ export const Contact = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="pt-10 pb-6 md:flex block justify-between items-center"
+        className="pt-10 pb-6 md:flex block justify-between  items-center"
       >
-        <div className="md:w-1/3 mt-4 w-full">
-          <h2 className="text-white text-3xl md:text-4xl">Get Involved</h2>
+        <div className="md:w-2/5 mt-4 w-full">
+          <h2 className="text-3xl md:text-4xl">Get Involved</h2>
           <p className="text-lg">
             Join our community of volunteers and make a difference in the lives
             of women and girls.
@@ -72,14 +83,14 @@ export const Contact = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"
           >
-            <button className="rounded-2xl mr-4 border mt-8 border-white px-8 py-3">
+            <button className="rounded-2xl mr-4 border mt-8 border-gray-800 px-8 py-3">
               Volunteer
             </button>
           </Link>
         </div>
 
-        <div className=" md:w-1/3 mt-4 w-full" id="donate">
-          <h2 className="text-white text-3xl md:text-4xl">Donate</h2>
+        <div className=" md:w-2/5 mt-4 w-full" id="donate">
+          <h2 className="text-3xl md:text-4xl">Donate</h2>
           <p className="text-lg">
             Your support helps us reach more communities and expand our impact.
           </p>
@@ -87,7 +98,7 @@ export const Contact = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"
           >
-            <button className="rounded-2xl mr-4 border mt-8 border-white px-8 py-3">
+            <button className="rounded-2xl mr-4 border mt-8 border-gray-800 px-8 py-3">
               Donate
             </button>
           </Link>

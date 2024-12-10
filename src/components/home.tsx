@@ -11,7 +11,7 @@ import Image from "next/image";
 export const HomeContent = () => {
   return (
     <div className="bg-white">
-      <div className="md:flex gap-10 text-gray-800 px-12 py-20">
+      <div className="md:flex justify-between gap-10 text-gray-800 px-12 py-20">
         <p className="md:text-5xl text-4xl tracking-widest font-bold leading-12">
           HerRise FOUNDATION
         </p>
@@ -39,6 +39,7 @@ export const HomeContent = () => {
         <Image
           src={im2}
           alt="collage"
+          layout="responsive"
           width={300}
           height={300}
           className=" w-full h-full"
@@ -47,12 +48,14 @@ export const HomeContent = () => {
           src={im3}
           alt="collage"
           width={300}
+          layout="responsive"
           height={300}
           className=" w-full h-full"
         />
         <Image
           src={im4}
           alt="collage"
+          layout="responsive"
           width={300}
           height={300}
           className=" w-full h-full"
@@ -60,6 +63,7 @@ export const HomeContent = () => {
         <Image
           src={im5}
           alt="collage"
+          layout="responsive"
           width={300}
           height={300}
           className=" w-full h-full"
@@ -67,6 +71,7 @@ export const HomeContent = () => {
         <Image
           src={im6}
           alt="collage"
+          layout="responsive"
           width={300}
           height={300}
           className=" w-full h-full"

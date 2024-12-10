@@ -1,4 +1,6 @@
+"use client";
 import { ProgramsBlock } from "@/utils/constant";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,15 +8,25 @@ import React from "react";
 export const Programs = () => {
   return (
     <div className="pt-24">
-      <section className=" m-8">
-        <div className="h-[300px] md:h-[500px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className=" m-8"
+      >
+        <div className="h-[300px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
           <h1 className="text-white text-6xl tracking-widest px-14">
             Programs
           </h1>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="md:px-14 flex flex-col justify-center items-center px-6 py-20 bg-white">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="md:px-14 flex flex-col justify-center items-center px-6 py-20 bg-white"
+      >
         <p className="text-center leading-12 md:w-[70%] w-full text-2xl">
           Our programs aim at tackling some of the most pressing issues facing
           girls today, from quality education and gender equality to climate
@@ -30,7 +42,10 @@ export const Programs = () => {
               <Image
                 src={program.img}
                 alt={program.title}
-                className="w-full md:pb-0 pb-4 md:h-[500px]"
+                layout="responsive"
+                width={500}
+                height={500}
+                className="md:pb-0 pb-4 "
               />
               <div className="leading-8 my-auto ">
                 <h2 className="text-3xl">{program.title}</h2>
@@ -44,7 +59,7 @@ export const Programs = () => {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

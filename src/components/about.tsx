@@ -16,7 +16,7 @@ const container = {
 
 export const About = () => {
   return (
-    <div className="px-10 md:px-16  bg-white tracking-wider pt-32 text-gray-700">
+    <div className="px-10 md:px-16 md:text-lg text-sm  bg-white tracking-wider pt-32 text-gray-700">
       <motion.div
         variants={container}
         viewport={{ once: true }}
@@ -25,14 +25,19 @@ export const About = () => {
         id="who-we-are"
       >
         <div>
-          <h1 className="font-bold md:text-5xl text-4xl my-4 text-center">
-            About Us
-          </h1>
+          <div className=" m-8">
+            <div className="h-[300px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+              <h1 className="text-white text-6xl tracking-widest px-14">
+                About Us
+              </h1>
+            </div>
+          </div>
           <p className="pb-4 font-bold">
-            Founded in 2022, HerRise Foundation champions gender equality,
-            quality education, and climate action. Through community-driven
-            programs and initiatives, we work towards a world where women and
-            girls are empowered to lead and thrive.
+            <span className="text-3xl font-bold">F</span>ounded in 2022, HerRise
+            Foundation champions gender equality, quality education, and climate
+            action. Through community-driven programs and initiatives, we work
+            towards a world where women and girls are empowered to lead and
+            thrive.
           </p>
           <p>
             HerRise Foundation empowers girls in underserved communities to
@@ -92,7 +97,7 @@ export const About = () => {
 
           <div>
             <h2 className="font-bold text-2xl my-4">Focus Areas</h2>
-            <ul className="list-decimal">
+            <ul className="list-disc">
               <li>
                 <span className="text-black font-bold">
                   {" "}
@@ -136,13 +141,14 @@ export const About = () => {
           Meet the Founder
         </h2>
         <div className="md:flex justify-between gap-12">
-          <div className="md:w-[50%] w-full">
+          <div className="md:w-[500px] w-full">
             <Image
               src={Founder}
               alt="Founder"
-              width={300}
-              height={100}
-              className="w-full  border rounded-lg border-r-8 border-gray-500"
+              layout="responsive"
+              width={500}
+              height={500}
+              className="w-full h-full border rounded-lg border-r-8 border-gray-500"
             />
           </div>
           <motion.div
@@ -205,11 +211,20 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="my-6">
+      <div className="my-6  flex items-center flex-col">
         <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
           Our Volunteers
         </h2>
-        <Image src={Volunteer} alt="volunteer" className="w-full" />
+        <div className="w-[800px]">
+          <Image
+            src={Volunteer}
+            alt="volunteer"
+            layout="responsive"
+            width={500}
+            height={500}
+            className="w-full"
+          />
+        </div>
       </div>
     </div>
   );
