@@ -14,8 +14,8 @@ export const Programs = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         className=" m-8"
       >
-        <div className="h-[300px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
-          <h1 className="text-white text-6xl tracking-widest px-14">
+        <div className="md:h-[300px] h-[200px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+          <h1 className="text-white md:text-6xl text-4xl tracking-widest px-14">
             Programs
           </h1>
         </div>
@@ -25,7 +25,7 @@ export const Programs = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="md:px-14 flex flex-col justify-center items-center px-6 py-20 bg-white"
+        className="md:px-14 flex flex-col justify-center items-center px-6 py-10 bg-white"
       >
         <p className="text-center leading-12 md:w-[70%] w-full text-2xl">
           Our programs aim at tackling some of the most pressing issues facing
@@ -51,7 +51,7 @@ export const Programs = () => {
                 <h2 className="text-3xl">{program.title}</h2>
                 <p className="py-6">{program.shortText}</p>
                 <Link href={`/programs/${program.slug}`}>
-                  <button className="rounded-2xl border mt-8 border-gray-500 px-8 py-3">
+                  <button className="rounded-2xl border mt-8 hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
                     See More
                   </button>
                 </Link>

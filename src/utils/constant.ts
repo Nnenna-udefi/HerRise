@@ -40,101 +40,46 @@ import img39 from "@/assets/images/sexual-productivity/5.jpeg";
 import img40 from "@/assets/images/breaking-silence/2.png";
 import img41 from "@/assets/images/breaking-silence/6.png";
 import img42 from "@/assets/images/breaking-silence/5.png";
+import img43 from "@/assets/images/back-to-school/2.jpeg";
+import img44 from "@/assets/images/back-to-school/3.jpeg";
+import img45 from "@/assets/images/back-to-school/4.jpeg";
+import img46 from "@/assets/images/back-to-school/5.jpeg";
+import img47 from "@/assets/images/back-to-school/6.jpeg";
+import img48 from "@/assets/images/back-to-school/7.jpeg";
 
-export const gallery = [
-  {
-    id: 1,
-    img: img1,
-  },
-  {
-    id: 2,
-    img: img2,
-  },
-  {
-    id: 3,
-    img: img3,
-  },
-  {
-    id: 4,
-    img: img4,
-  },
-  {
-    id: 5,
-    img: img5,
-  },
-  {
-    id: 6,
-    img: img6,
-  },
-  {
-    id: 7,
-    img: img7,
-  },
-  {
-    id: 8,
-    img: img8,
-  },
-  {
-    id: 9,
-    img: img9,
-  },
-  {
-    id: 10,
-    img: img10,
-  },
-  {
-    id: 11,
-    img: img11,
-  },
-  {
-    id: 12,
-    img: img12,
-  },
-  {
-    id: 13,
-    img: img13,
-  },
-  {
-    id: 14,
-    img: img14,
-  },
-  {
-    id: 15,
-    img: img15,
-  },
-  {
-    id: 16,
-    img: img16,
-  },
-  {
-    id: 17,
-    img: img17,
-  },
-  {
-    id: 18,
-    img: img18,
-  },
-  {
-    id: 19,
-    img: img19,
-  },
-  {
-    id: 20,
-    img: img20,
-  },
-  {
-    id: 21,
-    img: img40,
-  },
-  {
-    id: 22,
-    img: img42,
-  },
-  {
-    id: 23,
-    img: img41,
-  },
+const images = [
+  img43,
+  img40,
+  img45,
+  img13,
+  img46,
+  img47,
+  img41,
+  img44,
+  img42,
+  img10,
+  img11,
+  img12,
+  img14,
+  img15,
+  img16,
+  img17,
+  img48,
+  img18,
+  img19,
+  img20,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
 ];
+
+export const gallery = images.map((img, index) => ({ id: index + 1, img }));
 
 import introImg from "@/assets/images/introduction.jpeg";
 import IG24 from "@/assets/images/girl-child-2024/14.jpeg";
@@ -145,9 +90,32 @@ import repro from "@/assets/images/sexual-productivity/4.jpeg";
 import IG22 from "@/assets/images/girl-child-2022/3.jpeg";
 import christmas from "@/assets/images/christmas-2022/8.jpeg";
 import period1 from "@/assets/images/menstral-hygiene-2023/5.jpeg";
-import logo from "@/assets/images/WhatsApp Image 2024-10-29 at 11.32.29 PM.jpeg";
+import logo from "@/assets/images/logo3.jpeg";
+import b2s from "@/assets/images/back-to-school/1.jpeg";
+import b2sOutcome from "@/assets/images/back-to-school/8.jpeg";
 
 export const ProgramsBlock = [
+  {
+    img: b2s,
+    title:
+      "SmartStart Back to School Campaign: Equipping 1,404 Students for Success!",
+    slug: "smart-start-back-to-school",
+    shortText:
+      "Our #SmartStart Back to School Campaign has officially come to an end, but its impact will resonate for a lifetime!",
+    fullText: {
+      paragraphs: [
+        "As the school bells ring and students settle into a new academic term, we at HerRise Foundation are filled with gratitude and excitement. Our #SmartStart Back to School Campaign has officially come to an end, but its impact will resonate for a lifetime!",
+        "Through this initiative, we equipped 1,404 students with vision boards, empowering them to set clear academic goals, visualize their success, and stay motivated throughout the school year. We believe that when young minds are given the right tools and inspiration, they can dream bigger and achieve more.",
+        "This campaign is more than just school supplies it’s about promoting quality education (#SDG4), fostering a growth mindset, and instilling a love for learning in every child we reach. Education remains one of the most powerful tools for breaking barriers and transforming lives, and we are proud to be part of that journey.",
+        "A huge thank you to our dedicated team and supporters who made this possible. Your commitment to empowering young people is creating real change in our communities.",
+        "The school year has just begun, but for these students, the future is already looking brighter!",
+      ],
+      conclusion:
+        "#HerRiseFoundation #BackToSchool #EmpoweringYouth #QualityEducation #SDG4",
+    },
+    imgGallery: [b2sOutcome, img43, img44, img45, img46, img47, img48],
+  },
+
   {
     img: img40,
     title: "Breaking the Culture of Silence",
@@ -159,7 +127,7 @@ export const ProgramsBlock = [
         "As part of the 16 Days of Activism against Gender-Based Violence, the HerRise Foundation Team Abuja embarked on a powerful mission to educate and empower students at KEY SPECIAL ACADEMY FCT, ABUJA. Led by the dynamic Mercy Ifeosame, the team delivered a sensitization program that shed light on the various forms of violence against women and girls.",
         "The interactive session emphasized the importance of breaking the culture of silence that often surrounds gender-based violence. The students were encouraged to speak up and report any instances of violence or abuse, and to support those who may be affected.",
         "Through this initiative, HerRise Foundation aims to create a safe and supportive environment where women and girls can thrive, not just survive. By educating and empowering young minds, we can work towards a future where gender-based violence is eradicated.",
-        "We are proud of the amazing work our Abuja team is doing to create awareness and promote a safe env Together, we can make a difference and create a world where everyone can live without fear of violence or abuse",
+        "We are proud of the amazing work our Abuja team is doing to create awareness and promote a safe env Together, we can make a difference and create a world where everyone can live without fear of violence or abuse.",
       ],
       conclusion:
         "Join us in the fight against gender-based violence. Let's orange the world.",

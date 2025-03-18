@@ -23,7 +23,7 @@ export const Footer = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"
           >
-            <button className="rounded-2xl mr-4 border  border-gray-500 px-8 py-3">
+            <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  mr-4 border  border-gray-500 px-8 py-3">
               Volunteer
             </button>
           </Link>
@@ -32,7 +32,7 @@ export const Footer = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
             target="_blank"
           >
-            <button className="rounded-2xl border mt-2 md:mt-8 border-gray-500 px-8 py-3">
+            <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  border mt-2 md:mt-8 border-gray-500 px-8 py-3">
               Become a Partner
             </button>
           </Link>
@@ -67,10 +67,10 @@ export const Footer = () => {
             <div className="flex md:justify-normal justify-center gap-3 my-4">
               <Link href="https://www.instagram.com/herrise_foundation?igsh=MWM1b296dHdpaTVoeA==">
                 {" "}
-                <Instagram />
+                <Instagram className="hover:text-pnk" />
               </Link>
               <Link href="https://www.facebook.com/profile.php?id=100082207645159">
-                <Facebook />
+                <Facebook className="hover:text-pnk" />
               </Link>
             </div>
           </div>

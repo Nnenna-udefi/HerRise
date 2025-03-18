@@ -25,9 +25,9 @@ export const About = () => {
         id="who-we-are"
       >
         <div>
-          <div className=" m-8">
-            <div className="h-[300px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
-              <h1 className="text-white text-6xl tracking-widest px-14">
+          <div className="my-8 md:mx-8 mx-0">
+            <div className="md:h-[300px] h-[200px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
+              <h1 className="text-white md:text-6xl text-4xl text-center tracking-widest px-14">
                 About Us
               </h1>
             </div>
@@ -215,7 +215,7 @@ export const About = () => {
         <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
           Our Volunteers
         </h2>
-        <div className="w-[800px]">
+        <div className="md:w-[800px] w-full">
           <Image
             src={Volunteer}
             alt="volunteer"

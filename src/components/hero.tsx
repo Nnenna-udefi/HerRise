@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "@/assets/images/klingAI.png";
+import heroImg from "@/assets/images/breaking-silence/7.png";
 import Image from "next/image";
 
 export const Hero = () => {

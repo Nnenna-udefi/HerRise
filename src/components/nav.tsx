@@ -23,13 +23,15 @@ export const Nav = () => {
   ];
   return (
     <div className="bg-pnk px-8 pt-2 pb-4 flex justify-between  text-white items-center fixed w-full">
-      <Image
-        src={WhiteLogo}
-        alt="logo"
-        width={200}
-        height={100}
-        className="w-20"
-      />
+      <Link href="/">
+        <Image
+          src={WhiteLogo}
+          alt="logo"
+          width={200}
+          height={100}
+          className="w-20"
+        />
+      </Link>
 
       <ul className="md:flex hidden gap-6  w-full hover:tracking-wider justify-end">
         {navItems.map((items) => {
@@ -57,13 +59,15 @@ export const Nav = () => {
             : "ease-in-out w-[60%]  duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
-        <Image
-          src={PinkLogo}
-          alt="logo"
-          width={200}
-          height={100}
-          className="w-20"
-        />
+        <Link href="/">
+          <Image
+            src={PinkLogo}
+            alt="logo"
+            width={200}
+            height={100}
+            className="w-20"
+          />
+        </Link>
 
         {navItems.map((item) => (
           <li key={item.id} className="hover:text-pnk hover:font-bold py-2">
