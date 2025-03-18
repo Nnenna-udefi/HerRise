@@ -211,7 +211,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="my-6  flex items-center flex-col">
+      <div className="my-6  flex items-center flex-col bg-white">
         <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
           Our Volunteers
         </h2>

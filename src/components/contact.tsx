@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Contact = () => {
   return (
-    <div className="px-6 md:px-14 pt-32 pb-10">
+    <div className="px-6 md:px-14 pt-32 pb-10 bg-white">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

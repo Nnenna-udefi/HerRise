@@ -60,7 +60,7 @@ export const Media = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="m-8"
+        className="m-8 bg-white"
       >
         <div className="h-[200px] md:h-[200px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
           <h1 className="text-white md:text-6xl text-4xl tracking-widest px-14">
@@ -84,7 +84,7 @@ export const Media = () => {
                   alt="media"
                   width={500}
                   height={500}
-                  className="md:h-[300px] w-full"
+                  className="md:h-[300px] h-[500px] w-full"
                 />
               </Link>
             </div>
@@ -93,7 +93,7 @@ export const Media = () => {
       </div>
 
       {visibleImage < gallery.length && (
-        <div className="mb-10 flex items-center justify-center">
+        <div className="mb-10 flex items-center justify-center bg-white">
           <button
             onClick={() => setVisibleImage((prev) => prev + 20)}
             className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  mr-4 border  border-gray-500 px-8 py-3"

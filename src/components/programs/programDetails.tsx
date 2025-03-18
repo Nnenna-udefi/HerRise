@@ -14,7 +14,7 @@ export const ProgramDetails = () => {
     return <p>Loading...</p>;
   }
   return (
-    <div className="pt-24">
+    <div className="pt-24 bg-black">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
