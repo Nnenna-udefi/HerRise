@@ -8,7 +8,9 @@ const MediaPage = () => {
     <div>
       <Nav />
       <Suspense fallback={<p>Loading Media...</p>}>
-        <Media />
+        <div className="bg-white">
+          <Media />
+        </div>
       </Suspense>
 
       <Footer />

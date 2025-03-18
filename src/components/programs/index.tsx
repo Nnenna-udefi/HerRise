@@ -7,7 +7,7 @@ import React from "react";
 
 export const Programs = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-24 bg-white">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

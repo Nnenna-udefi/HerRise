@@ -9,7 +9,9 @@ const ProgramDetailsPage = () => {
   return (
     <div>
       <Nav />
-      <ProgramDetails />
+      <div className="bg-white">
+        <ProgramDetails />
+      </div>
       <Footer />
     </div>
   );

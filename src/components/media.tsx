@@ -84,7 +84,7 @@ export const Media = () => {
                   alt="media"
                   width={500}
                   height={500}
-                  className="md:h-[300px] h-[500px] w-full"
+                  className="md:h-[300px]  w-full"
                 />
               </Link>
             </div>
