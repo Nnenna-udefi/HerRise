@@ -22,14 +22,14 @@ export const Nav = () => {
     { id: 5, text: "Contact Us", href: "/contact-us" },
   ];
   return (
-    <div className="bg-pnk px-8 pt-2 pb-4 flex justify-between  text-white items-center fixed w-full">
+    <div className="bg-pnk px-8  flex justify-between  text-white items-center fixed w-full">
       <Link href="/">
         <Image
           src={WhiteLogo}
           alt="logo"
           width={200}
           height={100}
-          className="w-20"
+          className="lg:w-32 w-20"
         />
       </Link>
 
@@ -39,8 +39,8 @@ export const Nav = () => {
           return (
             <li
               key={items.id}
-              className={`hover:text-gray-600 ${
-                isActive ? `font-extrabold underline` : ``
+              className={`hover:text-gray-600 lg:text-xl text-base ${
+                isActive ? `font-extrabold border-b border-white` : ``
               }  `}
             >
               <Link href={items.href}>{items.text}</Link>
@@ -70,7 +70,10 @@ export const Nav = () => {
         </Link>
 
         {navItems.map((item) => (
-          <li key={item.id} className="hover:text-pnk hover:font-bold py-2">
+          <li
+            key={item.id}
+            className="hover:text-pnk hover:font-bold py-2 text-xl"
+          >
             <Link href={item.href}>{item.text}</Link>
           </li>
         ))}

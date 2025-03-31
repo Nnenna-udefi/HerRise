@@ -12,7 +12,7 @@ export const Programs = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="bg-white m-8"
+        className="bg-white m-8 bg-hero"
       >
         <div className="md:h-[300px] h-[200px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
           <h1 className="text-white md:text-6xl text-4xl tracking-widest px-14">

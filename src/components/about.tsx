@@ -4,6 +4,12 @@ import React from "react";
 import Founder from "@/assets/images/founder.jpg";
 import { motion } from "framer-motion";
 import Volunteer from "@/assets/images/volunteers.jpg";
+import IG24 from "@/assets/images/girl-child-2024/14.jpeg";
+import model from "@/assets/images/modle-girls-2023/1.jpeg";
+import model2 from "@/assets/images/modle-girls-2023/2.jpeg";
+import period from "@/assets/images/lets-talk-period/8.jpeg";
+import vision from "@/assets/images/girl-child-2024/5.jpeg";
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -16,7 +22,7 @@ const container = {
 
 export const About = () => {
   return (
-    <div className="px-10 md:px-16 md:text-lg text-sm  bg-white tracking-wider pt-32 text-gray-700">
+    <div className="px-10 md:px-20 md:text-xl text-base  bg-white tracking-wider pt-32 text-gray-700">
       <motion.div
         variants={container}
         viewport={{ once: true }}
@@ -25,7 +31,7 @@ export const About = () => {
         id="who-we-are"
       >
         <div>
-          <div className="my-8 md:mx-8 mx-0">
+          <div className="my-8 md:mx-8 mx-0 bg-hero">
             <div className="md:h-[300px] h-[200px]  md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
               <h1 className="text-white md:text-6xl text-4xl text-center tracking-widest px-14">
                 About Us
@@ -49,42 +55,69 @@ export const About = () => {
             inspire resilience, leadership, and purpose in every girl we reach.
           </p>
         </div>
-        <div>
-          <h2 className="font-bold text-2xl my-4">Mission statement</h2>
-
-          <p>
-            HerRise Foundation is dedicated to creating opportunities, uplifting
-            women and girls, and addressing environmental challenges through
-            impactful initiatives rooted in the Sustainable Development Goals
-            (SDGs).
-          </p>
-        </div>
-        <div>
-          <h2 className="font-bold text-2xl my-4">Vision statement </h2>
-
-          <p>
-            A world where every girl is empowered to rise, lead, and shape a
-            sustainable future.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="font-bold text-2xl my-4">Our core values</h2>
-
-          <p className="font-semibold">
-            Empowerment, Inclusivity, Resilience. Co-operation and Collaboration
-          </p>
-
-          <p>
-            {" "}
-            At HerRise Foundation, we believe in empowering every girl to reach
-            her full potential, fostering inclusivity to create equal
-            opportunities, and building resilience to overcome challenges and
-            drive lasting change.
-          </p>
-
+        <div className="py-10">
           <div>
-            <h2 className="font-bold text-2xl my-4">Our Thematic Areas</h2>
+            <div className="lg:flex block gap-10">
+              <div>
+                <h2 className="font-bold text-3xl lg:text-5xl my-4">
+                  Our <span className="underline">Mission</span>
+                </h2>
+                <p className=" px-4 py-8 ">
+                  HerRise Foundation is dedicated to creating opportunities,
+                  uplifting women and girls, and addressing environmental
+                  challenges through impactful initiatives rooted in the
+                  Sustainable Development Goals (SDGs).
+                </p>
+              </div>
+              <Image
+                src={period}
+                alt="im"
+                width={500}
+                height={300}
+                className="h-[500px]"
+              />
+            </div>
+          </div>
+          <div className="lg:flex justify-between block gap-10 py-10">
+            <div className="">
+              <h2 className="font-bold text-3xl lg:text-5xl my-4">
+                Our <span className="underline">Vision</span>{" "}
+              </h2>
+
+              <p className="px-4 py-8 bg-[#977759] text-white rounded-md">
+                A world where every girl is empowered to rise, lead, and shape a
+                sustainable future.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-bold text-3xl lg:text-5xl my-4">
+                Our Core <span className="underline">Values</span>
+              </h2>
+
+              <div className=" ">
+                <p className="bg-[#98AEB6] rounded-md text-white px-4 py-8">
+                  Empowerment, Inclusivity, Resilience. Co-operation and
+                  Collaboration
+                </p>
+
+                <p className="bg-[#98AEB6] rounded-md text-white px-4 py-8 mt-2">
+                  {" "}
+                  At HerRise Foundation, we believe in empowering every girl to
+                  reach her full potential, fostering inclusivity to create
+                  equal opportunities, and building resilience to overcome
+                  challenges and drive lasting change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="pb-10">
+            <h2 className="font-bold text-3xl lg:text-6xl text-center my-4">
+              Our Thematic <span className="underline">Areas</span>
+            </h2>
 
             <ul className="list-disc">
               <li>Education and Leadership Development</li>
@@ -95,50 +128,42 @@ export const About = () => {
             </ul>
           </div>
 
-          <div>
-            <h2 className="font-bold text-2xl my-4">Focus Areas</h2>
-            <ul className="list-disc">
-              <li>
-                <span className="text-black font-bold">
-                  {" "}
-                  SDG 4 – Quality Education:{" "}
-                </span>
-                <br />
-                <span>
+          <div className="py-10">
+            <h2 className="font-bold text-3xl lg:text-6xl text-center my-4">
+              Focus <span className="underline">Areas</span>
+            </h2>
+            <div className="flex gap-10 md:flex-row flex-col text-base lg:text-xl py-4">
+              <div className="bg-[#8d8888] text-white px-4 py-8 rounded-md text-center">
+                <p>SDG 4 – Quality Education</p>
+                <p className="pt-4">
                   &quot;We work to ensure inclusive, equitable education for
                   all, focusing on lifelong learning opportunities.”
-                </span>
-              </li>
+                </p>
+              </div>
 
-              <li>
-                <span className="text-black font-bold">
-                  SDG 5 – Gender Equality:
-                </span>
-                <br />
-                <span>
+              <div className="bg-[#008080] text-white px-4 py-8 rounded-md text-center">
+                <p> SDG 5 – Gender Equality</p>
+                <p className="pt-4">
                   &quot;Empowering women and girls through advocacy, leadership
                   programs, and community initiatives.&quot;
-                </span>
-              </li>
+                </p>
+              </div>
 
-              <li>
-                <span className="text-black font-bold">
-                  SDG 13 – Climate Action:
-                </span>
-                <br />
-                <span>
+              <div className="bg-[#977759] text-white px-4 py-8 rounded-md text-center">
+                <p>SDG 13 – Climate Action</p>
+                <p className="pt-4">
                   &quot;Taking action on climate change through community
                   education and sustainable practices.”
-                </span>
-              </li>
-            </ul>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>
 
       <div className="text-left my-12" id="founder">
-        <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
-          Meet the Founder
+        <h2 className="font-bold text-3xl lg:text-6xl text-center my-4">
+          Meet the <span className="underline">Founder</span>
         </h2>
         <div className="md:flex justify-between gap-12">
           <div className="md:w-[500px] w-full">
@@ -212,8 +237,8 @@ export const About = () => {
       </div>
 
       <div className="py-6  flex items-center flex-col bg-white">
-        <h2 className="md:text-5xl text-4xl text-center mt-8 mb-4">
-          Our Volunteers
+        <h2 className="font-bold text-3xl lg:text-6xl text-center my-4">
+          Meet Our <span className="underline">Volunteers</span>
         </h2>
         <div className="md:w-[800px] w-full">
           <Image

@@ -14,12 +14,12 @@ export const ProgramDetails = () => {
     return <p>Loading...</p>;
   }
   return (
-    <div className="pt-24 bg-black">
+    <div className="pt-24 bg-white">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="m-8"
+        className="m-8 bg-hero"
       >
         <div className="md:h-[300px] h-[200px] md:inset-10 inset-0 bg-pnk bg-opacity-90 flex items-center justify-center">
           <h1 className="text-white md:text-6xl text-4xl tracking-widest px-14">

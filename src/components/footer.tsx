@@ -7,14 +7,8 @@ import { Copyright, Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <div className="bg-white border-t border-t-gray-700 text-gray-700 py-10 md:px-12 px-8">
-      <Image
-        src={PinkLogo}
-        alt="logo"
-        width={100}
-        height={50}
-        className="w-20"
-      />
+    <div className="bg-white border-t border-t-gray-700 lg:px-12 text-gray-700 py-10 md:px-12 px-8">
+      <Image src={PinkLogo} alt="logo" width={200} height={200} className="" />
 
       <div className="md:flex justify-between gap-10 block ">
         <div className="p-0">
@@ -76,7 +70,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-3 items-center md:justify-end justify-center">
+      <div className="flex gap-3 items-center bg-black text-white py-4 mt-10 justify-center">
         <Copyright />
         <p>2024 HerRise Foundation. All Rights Reserved.</p>
       </div>
