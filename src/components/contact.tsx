@@ -47,7 +47,7 @@ export const Contact = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="pt-10 pb-6 md:flex block justify-between  items-center"
+        className="pt-10 pb-6 lg:px-24 md:flex block justify-between  items-center"
       >
         <div className="md:w-2/5 mt-4 w-full">
           <h2 className="text-3xl md:text-4xl">Get Involved</h2>
