@@ -46,7 +46,7 @@ export const ContactForm = () => {
       });
 
       setFormData({ email: "", message: "" });
-    } catch (err) {
+    } catch {
       Swal.fire({
         title: "Error!",
         text: "Failed to send message. Please try again. ❌",
