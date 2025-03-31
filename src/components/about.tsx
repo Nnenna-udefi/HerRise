@@ -4,11 +4,8 @@ import React from "react";
 import Founder from "@/assets/images/founder.jpg";
 import { motion } from "framer-motion";
 import Volunteer from "@/assets/images/volunteers.jpg";
-import IG24 from "@/assets/images/girl-child-2024/14.jpeg";
-import model from "@/assets/images/modle-girls-2023/1.jpeg";
-import model2 from "@/assets/images/modle-girls-2023/2.jpeg";
+;
 import period from "@/assets/images/lets-talk-period/8.jpeg";
-import vision from "@/assets/images/girl-child-2024/5.jpeg";
 
 const container = {
   hidden: { opacity: 0 },
