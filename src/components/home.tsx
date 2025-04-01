@@ -62,7 +62,7 @@ export const HomeContent = () => {
         variants={cardVariants}
         className="flex flex-col justify-center items-center pb-10"
       >
-        <h2 className="md:text-6xl py-4 text-4xl font-bold font-recoleta">
+        <h2 className="md:text-6xl py-4 text-4xl font-bold text-center font-recoleta">
           Join Our Community
         </h2>
         <p className="tracking-widest py-4 leading-7 md:text-xl text-black text-lg text-center ">
@@ -106,11 +106,11 @@ export const HomeContent = () => {
         animate="visible"
         className="flex flex-col justify-center items-center pb-10"
       >
-        <h2 className="md:text-6xl pb-4 text-4xl font-bold font-roboto ">
+        <h2 className="md:text-6xl pb-4 text-4xl font-bold font-recoleta ">
           Programs
         </h2>
         <div className="">
-          <div className="flex md:flex-row flex-col gap-10 text-gray-700 pt-14">
+          <div className="flex md:flex-row flex-col gap-10 text-gray-700 pt-6">
             {ProgramsBlock.filter((_, index) => [0, 1, 3].includes(index)).map(
               (program) => (
                 <div
@@ -164,7 +164,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-[500px] h-full"
+          className=" md:w-[500px] w-full h-full"
         />
         <Image
           src={im3}
@@ -172,7 +172,7 @@ export const HomeContent = () => {
           width={300}
           layout="responsive"
           height={300}
-          className=" w-[500px] h-full"
+          className=" md:w-[500px] w-full h-full"
         />
         <Image
           src={im4}
@@ -180,7 +180,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-[500px] h-full"
+          className=" md:w-[500px] w-full h-full"
         />
         <Image
           src={im5}
@@ -188,7 +188,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-[500px] h-full"
+          className=" md:w-[500px] w-full h-full"
         />
         <Image
           src={im6}
@@ -196,7 +196,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-[500px] h-full bg-black"
+          className=" md:w-[500px] w-full h-full bg-black"
         />
       </div>
     </div>
