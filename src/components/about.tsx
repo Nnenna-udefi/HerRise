@@ -159,7 +159,7 @@ export const About = () => {
           </motion.div>
         </motion.div>
 
-        <div className="text-left my-12" id="founder">
+        <div className="text-left py-12" id="founder">
           <h2 className="font-bold text-3xl lg:text-6xl text-center my-4">
             Meet the <span className="underline">Founder</span>
           </h2>
