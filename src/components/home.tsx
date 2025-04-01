@@ -15,11 +15,11 @@ export const HomeContent = () => {
       <div className="md:flex block justify-between gap-10 text-gray-800  py-20">
         <Image src={heroImg} alt="hero" width={500} height={500} />
         <div>
-          <h1 className="md:text-5xl text-4xl tracking-widest font-bold leading-12">
+          <h1 className="md:text-5xl mt-4 md:mt-0 text-4xl tracking-widest font-bold leading-12">
             HerRise FOUNDATION
           </h1>
-          <div className=" pt-12 w-full">
-            <p className="tracking-widest leading-7 md:text-xl text-lg">
+          <div className=" pt-10 w-full">
+            <p className="tracking-widest leading-7 md:text-xl  text-lg">
               HerRise Foundation is more than an organization—it’s a movement
               dedicated to empowering women and girls through education,
               advocacy, and climate action. Founded on the principles of
@@ -39,8 +39,8 @@ export const HomeContent = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center py-10">
-        <h2 className="md:text-6xl py-4 text-2xl font-bold font-roboto ">
+      <div className="flex flex-col justify-center items-center pb-10">
+        <h2 className="md:text-6xl py-4 text-4xl font-bold font-roboto ">
           Join Our Community
         </h2>
         <p className="tracking-widest py-4 leading-7 md:text-xl text-lg text-center ">
@@ -55,24 +55,27 @@ export const HomeContent = () => {
           inclusive future. Be the change. Join us today.
         </p>
 
-        <div className="md:flex gap-10 block py-10">
-          <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
-            target="_blank"
-          >
-            <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white border  border-gray-500 px-8 py-3">
-              Volunteer
-            </button>
-          </Link>
-
-          <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
-            target="_blank"
-          >
-            <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  border  border-gray-500 px-8 py-3">
-              Become a Partner
-            </button>
-          </Link>
+        <div className="flex md:flex-row flex-col md:gap-10 gap-4 items-center py-10">
+          <div>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
+              target="_blank"
+            >
+              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white border  border-gray-500 px-8 py-3">
+                Volunteer
+              </button>
+            </Link>
+          </div>
+          <div>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
+              target="_blank"
+            >
+              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  border  border-gray-500 px-8 py-3">
+                Become a Partner
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 

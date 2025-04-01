@@ -22,7 +22,7 @@ export const Nav = () => {
     { id: 5, text: "Contact Us", href: "/contact-us" },
   ];
   return (
-    <div className="bg-pnk px-8  flex justify-between  text-white items-center fixed w-full">
+    <div className="bg-pnk px-8 z-50  flex justify-between  text-white items-center fixed w-full">
       <Link href="/">
         <Image
           src={WhiteLogo}
