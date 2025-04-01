@@ -59,6 +59,7 @@ export const HomeContent = () => {
       <motion.div
         initial="hidden"
         animate="visible"
+        variants={cardVariants}
         className="flex flex-col justify-center items-center pb-10"
       >
         <h2 className="md:text-6xl py-4 text-4xl font-bold font-recoleta">
@@ -100,11 +101,12 @@ export const HomeContent = () => {
         </div>
       </motion.div>
       <motion.div
+        variants={cardVariants}
         initial="hidden"
         animate="visible"
         className="flex flex-col justify-center items-center pb-10"
       >
-        <h2 className="md:text-6xl py-4 text-4xl font-bold font-roboto ">
+        <h2 className="md:text-6xl pb-4 text-4xl font-bold font-roboto ">
           Programs
         </h2>
         <div className="">
@@ -162,7 +164,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-full h-full"
+          className=" w-[500px] h-full"
         />
         <Image
           src={im3}
@@ -170,7 +172,7 @@ export const HomeContent = () => {
           width={300}
           layout="responsive"
           height={300}
-          className=" w-full h-full"
+          className=" w-[500px] h-full"
         />
         <Image
           src={im4}
@@ -178,7 +180,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-full h-full"
+          className=" w-[500px] h-full"
         />
         <Image
           src={im5}
@@ -186,7 +188,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-full h-full"
+          className=" w-[500px] h-full"
         />
         <Image
           src={im6}
@@ -194,7 +196,7 @@ export const HomeContent = () => {
           layout="responsive"
           width={300}
           height={300}
-          className=" w-full h-full"
+          className=" w-[500px] h-full bg-black"
         />
       </div>
     </div>

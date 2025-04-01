@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const FORMSPARK_URL = "https://submit-form.com/HbAeInpMi";
+const FORMSPARK_URL = "https://submit-form.com/nT04EuGDm";
 
 export async function POST(req: Request) {
   try {

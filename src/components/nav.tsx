@@ -53,11 +53,11 @@ export const Nav = () => {
         {nav ? <X size={20} className="text-white" /> : <Menu size={20} />}
       </div>
       <ul
-        className={
+        className={`${
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] pl-4 h-full text-gray-700 border-r border-r-gray-700 bg-white ease-in-out duration-500"
-            : "ease-in-out w-[60%]  duration-500 fixed top-0 bottom-0 left-[-100%]"
-        }
+            ? "fixed left-0 top-0 w-[60%] pl-4 h-full text-gray-700 border-r border-r-gray-700 bg-white ease-in-out transition-all duration-500"
+            : "fixed top-0 bottom-0 left-[-100%] transition-all duration-500 ease-in-out"
+        }`}
       >
         <Link href="/">
           <Image
