@@ -81,7 +81,7 @@ export const Media = () => {
               <Link href={`/media/${med.id}`}>
                 <Image
                   src={med.img}
-                  alt="media"
+                  alt="media images"
                   width={500}
                   height={500}
                   className="md:h-[300px]  w-full"
@@ -93,10 +93,10 @@ export const Media = () => {
       </div>
 
       {visibleImage < gallery.length && (
-        <div className="mb-10 flex items-center justify-center bg-white">
+        <div className="pb-10 flex items-center justify-center bg-white">
           <button
             onClick={() => setVisibleImage((prev) => prev + 20)}
-            className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  mr-4 border  border-gray-500 px-8 py-3"
+            className="rounded-2xl text-black hover:border-none hover:bg-pnk hover:text-white  mr-4 border  border-gray-500 px-8 py-3"
           >
             See More
           </button>
