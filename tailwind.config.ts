@@ -20,6 +20,8 @@ const config: Config = {
       fontFamily: {
         roboto: ["var(--font-roboto)"],
         merriweather: ["var(--font-merriweather)"],
+        recoleta: ["var(--font-recoleta)"],
+        nunito: ["var(--font-nunito)"],
       },
     },
   },
