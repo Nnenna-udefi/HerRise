@@ -65,7 +65,7 @@ export const HomeContent = () => {
         <h2 className="md:text-6xl py-4 text-4xl font-bold font-recoleta">
           Join Our Community
         </h2>
-        <p className="tracking-widest py-4 leading-7 md:text-xl text-lg text-center ">
+        <p className="tracking-widest py-4 leading-7 md:text-xl text-black text-lg text-center ">
           At HerRise Foundation, we believe in the power of community to drive
           meaningful change. We understand the challenges women and girls
           face—barriers to education, inequality, and the urgent need for
@@ -83,7 +83,7 @@ export const HomeContent = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
             >
-              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white border  border-gray-500 px-8 py-3">
+              <button className="rounded-2xl hover:border-none text-black hover:bg-pnk hover:text-white border  border-gray-500 px-8 py-3">
                 Volunteer
               </button>
             </Link>
@@ -93,7 +93,7 @@ export const HomeContent = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
             >
-              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  border  border-gray-500 px-8 py-3">
+              <button className="rounded-2xl hover:border-none text-black hover:bg-pnk hover:text-white  border  border-gray-500 px-8 py-3">
                 Become a Partner
               </button>
             </Link>
@@ -144,7 +144,7 @@ export const HomeContent = () => {
           </div>
         </div>
         <Link href={`/programs`}>
-          <button className="rounded-2xl border  hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
+          <button className="rounded-2xl border text-black hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
             See More
           </button>
         </Link>
