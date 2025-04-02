@@ -52,3 +52,15 @@ h5 {
 * {
   font-variant-ligatures: none;
 }
+
+.reveal {
+  position: relative;
+  margin: 4rem 0;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}

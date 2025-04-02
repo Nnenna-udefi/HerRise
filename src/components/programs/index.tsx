@@ -3,9 +3,14 @@ import { ProgramsBlock } from "@/utils/constant";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { setupRevealOnScroll } from "../utils/revealOnScroll";
 
 export const Programs = () => {
+  useEffect(() => {
+    const cleanup = setupRevealOnScroll();
+    return cleanup;
+  }, []);
   return (
     <div className="pt-24 bg-white">
       <motion.section
@@ -37,7 +42,7 @@ export const Programs = () => {
           {ProgramsBlock.map((program) => (
             <div
               key={program.title}
-              className="md:grid grid-cols-2 block my-6 gap-10 p-2 bg-gray-100"
+              className="md:grid grid-cols-2 reveal block my-6 gap-10 p-2 bg-gray-100"
             >
               <Image
                 src={program.img}

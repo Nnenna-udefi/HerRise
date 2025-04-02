@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import im1 from "@/assets/images/menstral-hygiene-2023/8.jpeg";
 import im2 from "@/assets/images/girl-child-2023/1.jpeg";
 import im3 from "@/assets/images/girl-child-2024/1.jpeg";
@@ -11,6 +11,8 @@ import Image from "next/image";
 import heroImg from "@/assets/images/breaking-silence/7.png";
 import { ProgramsBlock } from "@/utils/constant";
 import { motion } from "framer-motion";
+import { setupRevealOnScroll } from "./utils/revealOnScroll";
+import { Impact } from "./impact";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -22,13 +24,17 @@ const cardVariants = {
 };
 
 export const HomeContent = () => {
+  useEffect(() => {
+    const cleanup = setupRevealOnScroll();
+    return cleanup;
+  }, []);
   return (
     <div className="bg-white lg:px-12 px-6">
       <motion.div
         variants={cardVariants}
         initial="hidden"
         animate="visible"
-        className="md:flex block justify-between gap-10 text-gray-800  py-20"
+        className="md:flex block reveal justify-between gap-10 text-gray-800  py-20"
       >
         <Image src={heroImg} alt="hero" width={500} height={500} />
         <div>
@@ -48,19 +54,21 @@ export const HomeContent = () => {
               can rise and thrive.
             </p>
             <Link href="/about">
-              <button className="rounded-2xl border mt-8 hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
+              <button className="rounded-2xl transition-all duration-300 hover:scale-105 border mt-8 hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
                 Learn More
               </button>
             </Link>
           </div>
         </div>
       </motion.div>
-
+      <div className="reveal">
+        <Impact />
+      </div>
       <motion.div
+        variants={cardVariants}
         initial="hidden"
         animate="visible"
-        variants={cardVariants}
-        className="flex flex-col justify-center items-center pb-10"
+        className="flex flex-col reveal justify-center items-center pb-10"
       >
         <h2 className="md:text-6xl py-4 text-4xl font-bold text-center font-recoleta">
           Join Our Community
@@ -83,7 +91,7 @@ export const HomeContent = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
             >
-              <button className="rounded-2xl hover:border-none text-black hover:bg-pnk hover:text-white border  border-gray-500 px-8 py-3">
+              <button className="rounded-2xl transition-all duration-300 hover:scale-105 text-black hover:bg-pnk hover:text-white border border-gray-500 px-10 py-4">
                 Volunteer
               </button>
             </Link>
@@ -93,111 +101,81 @@ export const HomeContent = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
             >
-              <button className="rounded-2xl hover:border-none text-black hover:bg-pnk hover:text-white  border  border-gray-500 px-8 py-3">
-                Become a Partner
+              <button className="rounded-2xl transition-all duration-300 hover:scale-105 text-black hover:bg-pnk hover:text-white border border-gray-500 px-10 py-4">
+                Partner With Us
+              </button>
+            </Link>
+          </div>
+          <div>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
+              target="_blank"
+            >
+              <button className="rounded-2xl transition-all duration-300 hover:scale-105 text-black hover:bg-pnk hover:text-white border border-gray-500 px-10 py-4">
+                Donate
               </button>
             </Link>
           </div>
         </div>
       </motion.div>
+
+      {/* Programs Section */}
       <motion.div
         variants={cardVariants}
         initial="hidden"
         animate="visible"
-        className="flex flex-col justify-center items-center pb-10"
+        className="flex flex-col reveal items-center pb-10"
       >
-        <h2 className="md:text-6xl pb-4 text-4xl font-bold font-recoleta ">
-          Programs
-        </h2>
-        <div className="">
-          <div className="flex md:flex-row flex-col gap-10 text-gray-700 pt-6">
-            {ProgramsBlock.filter((_, index) => [0, 1, 3].includes(index)).map(
-              (program) => (
-                <div
-                  key={program.title}
-                  className="my-6 md:w-[300px] w-full rounded-xl bg-gray-100 flex flex-col h-full"
-                >
-                  <Image
-                    src={program.img}
-                    alt={program.title}
-                    width={500}
-                    height={500}
-                    className="md:w-[300px] rounded-t-xl w-full h-[200px] object-cover"
-                  />
-                  <div className="flex flex-col  p-4 justify-between">
-                    <h2 className="text-2xl">
-                      {program.title.split(" ").slice(0, 5).join(" ")}
-                      {program.title.split(" ").length > 5 ? "..." : ""}
-                    </h2>
-                    {/* <p className="py-6">{program.shortText}</p> */}
-                    <div className="items-end">
-                      <Link href={`/programs/${program.slug}`}>
-                        <button className="font-bold text-xl hover:border-b hover:border-pnk border-gray-500 py-2">
-                          See More
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
+        <h2 className="md:text-6xl pb-4 text-4xl font-bold">Programs</h2>
+        <div className="flex md:flex-row flex-col gap-10 text-gray-700 pt-6">
+          {ProgramsBlock.filter((_, index) => [1, 3, 5].includes(index)).map(
+            (program, index) => (
+              <motion.div
+                key={program.title}
+                className="my-6 md:w-[300px] w-full rounded-xl bg-gray-100 flex flex-col h-full hover:shadow-lg hover:scale-105 transition-transform"
+                variants={cardVariants}
+                custom={index}
+              >
+                <Image
+                  src={program.img}
+                  alt={program.title}
+                  width={500}
+                  height={500}
+                  className="rounded-t-xl w-full h-[200px] object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-2xl overflow-hidden text-ellipsis">
+                    {program.title}
+                  </h2>
+                  <Link href={`/programs/${program.slug}`}>
+                    <button className="font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-b border-gray-500 py-2">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
-              )
-            )}
-          </div>
+              </motion.div>
+            )
+          )}
         </div>
-        <Link href={`/programs`}>
-          <button className="rounded-2xl border text-black hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
+        <Link href="/programs">
+          <button className="rounded-2xl transition-all duration-300 hover:scale-105 border text-black hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-10 py-4">
             See More
           </button>
         </Link>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 grid-cols-2 w-full">
-        <Image
-          src={im1}
-          alt="collage"
-          width={300}
-          height={300}
-          className=" w-full"
-        />
-        <Image
-          src={im2}
-          alt="collage"
-          layout="responsive"
-          width={300}
-          height={300}
-          className=" md:w-[500px] w-full h-full"
-        />
-        <Image
-          src={im3}
-          alt="collage"
-          width={300}
-          layout="responsive"
-          height={300}
-          className=" md:w-[500px] w-full h-full"
-        />
-        <Image
-          src={im4}
-          alt="collage"
-          layout="responsive"
-          width={300}
-          height={300}
-          className=" md:w-[500px] w-full h-full"
-        />
-        <Image
-          src={im5}
-          alt="collage"
-          layout="responsive"
-          width={300}
-          height={300}
-          className=" md:w-[500px] w-full h-full"
-        />
-        <Image
-          src={im6}
-          alt="collage"
-          layout="responsive"
-          width={300}
-          height={300}
-          className=" md:w-[500px] w-full h-full bg-black"
-        />
+      {/* Gallery Section */}
+      <div className="reveal grid md:grid-cols-3 grid-cols-2  w-full">
+        {[im1, im2, im3, im4, im5, im6].map((img, index) => (
+          <Image
+            key={index}
+            src={img}
+            alt="gallery"
+            width={300}
+            height={300}
+            className="w-full object-cover "
+          />
+        ))}
       </div>
     </div>
   );
