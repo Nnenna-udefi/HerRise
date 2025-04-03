@@ -10,7 +10,7 @@ import CountUp from "react-countup";
 
 export const Impact = () => {
   return (
-    <div>
+    <div className="text-black">
       <h2 className="md:text-6xl py-4 text-4xl font-bold text-center font-recoleta">
         Our Impact
       </h2>
@@ -22,21 +22,21 @@ export const Impact = () => {
             <CountUp end={4000} duration={3} />+
           </p>
         </div>
-        <div className="bg-gray-100 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
+        <div className="bg-gray-100 p-6 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
           <CalendarDaysIcon className="text-pnk" size={50} />
           <h3 className="text-center">Years of Advocacy</h3>
           <p>
             <CountUp end={2} duration={2} />+
           </p>
         </div>
-        <div className="bg-gray-100 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
+        <div className="bg-gray-100 p-6 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
           <LucideUserRoundPlus className="text-pnk" size={50} />
           <h3 className="text-center">Outreach Programs</h3>
           <p>
             <CountUp end={ProgramsBlock.length} duration={2.5} />+
           </p>
         </div>
-        <div className="bg-gray-100 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
+        <div className="bg-gray-100 p-6 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
           <Handshake className="text-pnk" size={50} />
           <h3 className="text-center">Volunteers Engaged</h3>
           <p>

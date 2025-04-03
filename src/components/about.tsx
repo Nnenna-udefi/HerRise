@@ -25,7 +25,7 @@ export const About = () => {
     return cleanup;
   }, []);
   return (
-    <div>
+    <div className="bg-white text-black">
       <div className="px-10 md:px-20 md:text-xl text-base  bg-white tracking-wider pt-32 text-gray-700">
         <motion.div
           variants={container}

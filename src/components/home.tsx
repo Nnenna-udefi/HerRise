@@ -165,7 +165,7 @@ export const HomeContent = () => {
       </motion.div>
 
       {/* Gallery Section */}
-      <div className="reveal grid md:grid-cols-3 grid-cols-2  w-full">
+      <div className="reveal grid md:grid-cols-3 grid-cols-2 bg-white w-full">
         {[im1, im2, im3, im4, im5, im6].map((img, index) => (
           <Image
             key={index}

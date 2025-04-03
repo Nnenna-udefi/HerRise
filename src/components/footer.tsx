@@ -7,7 +7,7 @@ import { Copyright, Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="bg-white border-t border-t-gray-700 lg:px-12 text-gray-700 py-10 md:px-12 px-8">
         <Image
           src={PinkLogo}
@@ -24,7 +24,7 @@ export const Footer = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
             >
-              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  mr-4 border  border-gray-500 px-8 py-3">
+              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  mr-4 border  border-gray-500 md:mt-0 mt-4 px-8 py-3">
                 Volunteer
               </button>
             </Link>

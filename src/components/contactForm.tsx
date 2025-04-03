@@ -96,7 +96,7 @@ export const ContactForm = () => {
           </div>
         </form>
 
-        <h2 className="uppercase md:hidden block  py-4  font-semibold text-xl text-center">
+        <h2 className="uppercase md:hidden block lg:3xl  py-4  font-semibold text-xl text-center">
           Or Send Us a message
         </h2>
         <div className="rounded-2xl w-full lg:text-2xl text-xl ">
@@ -118,7 +118,9 @@ export const ContactForm = () => {
                 {" "}
                 <ContactProp Icon={Phone} details="+234 813 027 6164" />
               </Link>
-              <p>You can also follow us on our social media platforms:</p>
+              <p className="text-left">
+                You can also follow us on our social media platforms:
+              </p>
               <div className="flex gap-3 my-4">
                 <Link href="https://www.instagram.com/herrise_foundation?igsh=MWM1b296dHdpaTVoeA==">
                   {" "}
