@@ -1,4 +1,3 @@
-import { ProgramsBlock } from "@/utils/constant";
 import {
   CalendarDaysIcon,
   Handshake,
@@ -19,7 +18,7 @@ export const Impact = () => {
           <Users2Icon className="text-pnk" size={50} />
           <h3 className="text-center">Women & Girls Impacted</h3>
           <p>
-            <CountUp end={4000} duration={3} />+
+            <CountUp end={8000} duration={5} />+
           </p>
         </div>
         <div className="bg-gray-100 p-6 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
@@ -33,7 +32,7 @@ export const Impact = () => {
           <LucideUserRoundPlus className="text-pnk" size={50} />
           <h3 className="text-center">Outreach Programs</h3>
           <p>
-            <CountUp end={ProgramsBlock.length} duration={2.5} />+
+            <CountUp end={30} duration={2.5} />+
           </p>
         </div>
         <div className="bg-gray-100 p-6 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">
@@ -41,7 +40,7 @@ export const Impact = () => {
           <h3 className="text-center">Volunteers Engaged</h3>
           <p>
             {" "}
-            <CountUp end={40} duration={2} />+
+            <CountUp end={50} duration={2} />+
           </p>
         </div>
       </div>

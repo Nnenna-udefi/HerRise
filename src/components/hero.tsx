@@ -1,13 +1,18 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { setupRevealOnScroll } from "./utils/revealOnScroll";
 
 export const Hero = () => {
+  useEffect(() => {
+    const cleanup = setupRevealOnScroll();
+    return cleanup;
+  }, []);
   return (
     <div className="relative z-0 pt-10 w-full bg-hero bg-cover bg-center bg-no-repeat">
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/80"></div>
 
-      <div className="relative flex flex-col justify-center items-center h-[600px] text-center px-4">
+      <div className="relative flex reveal flex-col justify-center items-center h-[600px] text-center px-4">
         <p className="md:text-5xl uppercase font-sans font-bold  tracking-widest leading-10 text-white px-4 text-4xl md:w-[60%] w-full">
           Empowering Women, Educating Communities
         </p>
