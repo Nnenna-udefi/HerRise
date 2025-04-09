@@ -15,7 +15,7 @@ export const Hero = () => {
 
       <div className="relative flex reveal flex-col justify-center items-center text-center px-4">
         <p className="md:text-5xl uppercase font-sans font-bold  tracking-widest leading-10 text-white px-4 text-4xl md:w-[60%] w-full">
-          Empowering Women, Educating Communities
+          Empowering Women and Girls, Educating Communities
         </p>
         <p className="text-white text-2xl py-4">
           Advocating for a Sustainable Future
