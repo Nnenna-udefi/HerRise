@@ -86,7 +86,7 @@ export const About = () => {
 
             <div className="lg:flex justify-between gap-10 py-10 bg-gray-50">
               {/* Vision Section */}
-              <div className="lg:w-1/2">
+              <motion.div className="lg:w-1/2 reveal p-4 md:text-2xl">
                 <h2 className="font-bold text-3xl lg:text-5xl my-4 text-primary">
                   Our <span className="underline">Vision</span>
                 </h2>
@@ -95,10 +95,10 @@ export const About = () => {
                   A world where every girl is empowered to rise, lead, and shape
                   a sustainable future.
                 </p>
-              </div>
+              </motion.div>
 
               {/* Core Values Section */}
-              <div className="lg:w-1/2">
+              <motion.div className="lg:w-1/2 reveal p-4 md:text-2xl">
                 <h2 className="font-bold text-3xl lg:text-5xl my-4 text-primary">
                   Our Core <span className="underline">Values</span>
                 </h2>
@@ -109,7 +109,7 @@ export const About = () => {
                     Collaboration.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
 

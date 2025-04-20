@@ -13,6 +13,7 @@ import { ProgramsBlock } from "@/utils/constant";
 import { motion } from "framer-motion";
 import { setupRevealOnScroll } from "./utils/revealOnScroll";
 import { Impact } from "./impact";
+import announcement from "@/assets/images/announcement.jpeg";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -162,6 +163,16 @@ export const HomeContent = () => {
             See More
           </button>
         </Link>
+      </motion.div>
+
+      <motion.div className="reveal flex justify-center items-center">
+        <Image
+          src={announcement}
+          alt="announcement"
+          width={1000}
+          height={1000}
+          className="max-w-full"
+        />
       </motion.div>
 
       {/* Gallery Section */}
