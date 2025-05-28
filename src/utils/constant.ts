@@ -46,8 +46,10 @@ import img45 from "@/assets/images/back-to-school/4.jpeg";
 import img46 from "@/assets/images/back-to-school/5.jpeg";
 import img47 from "@/assets/images/back-to-school/6.jpeg";
 import img48 from "@/assets/images/back-to-school/7.jpeg";
-
+import img49 from "@/assets/images/leadership/l1.jpeg";
 const images = [
+  gbvImg2,
+  img49,
   img43,
   img40,
   img45,
@@ -93,8 +95,65 @@ import period1 from "@/assets/images/menstral-hygiene-2023/5.jpeg";
 import logo from "@/assets/images/logo3.jpeg";
 import b2s from "@/assets/images/back-to-school/1.jpeg";
 import b2sOutcome from "@/assets/images/back-to-school/8.jpeg";
+import leadImg from "@/assets/images/leadership/l2.jpeg";
+import leadImg2 from "@/assets/images/leadership/l3.jpeg";
+import gbvImg1 from "@/assets/images/GBV/g2.jpeg";
+import gbvImg2 from "@/assets/images/GBV/g3.jpeg";
 
 export const ProgramsBlock = [
+  {
+    img: gbvImg1,
+    title:
+      "The Power of Awareness: Why Ending GBV Starts With Everyday Conversations",
+    slug: "power-of-awareness",
+    shortText:
+      "The silence in classrooms where no one talks about consent. The silence in communities where abuse is ignored. The silence in homes where young girls are told to endure rather than speak up. And perhaps most dangerously, the silence of bystanders who choose not to see.",
+    fullText: {
+      paragraphs: [
+        "Gender-Based Violence (GBV) doesn’t begin with violence—it begins with silence.",
+        "The silence in classrooms where no one talks about consent. The silence in communities where abuse is ignored. The silence in homes where young girls are told to endure rather than speak up. And perhaps most dangerously, the silence of bystanders who choose not to see.",
+        "At HerRise Foundation, we are committed to breaking that silence. Through our “Voices Against VAWG” project, supported by the Nigerian Women’s Trust Fund, we’ve been traveling into communities not just to hold events—but to ignite conversations.",
+        "One of these conversations recently took place at Brain Prosper International School in Mile 50, Abakaliki, Ebonyi State. There, we engaged with educators—not just as professionals, but as community influencers, parents, and protectors. The staff didn’t just listen—they leaned in. They asked questions, shared concerns, and reminded us why these spaces matter so deeply.",
+        "Here’s the truth we cannot ignore:",
+        "1 in 4 girls in Nigeria will experience sexual violence before the age of 18 (UNICEF, 2020).",
+        "Not because the girls don’t want justice—but because they don’t believe they’ll be heard. Because somewhere along the line, society taught them that their pain was too inconvenient, too shameful, too small to matter.",
+        "This has to change. And it can. So what now?",
+        "We keep talking. We keep teaching. We keep showing up—in schools, in homes, in policy rooms, and on the streets. Because silence will never protect our daughters. And awareness without action is just noise.",
+        "When a community understands the cost of inaction, it begins to move differently. Teachers start to notice. Parents start to ask questions. Boys begin to unlearn. Girls begin to speak.",
+        "This is the slow, steady work of change—and it starts with awareness.",
+        "Not every solution comes from a courtroom. Some of the most powerful change begins with a simple conversation in a classroom, or a listening ear in a staff room.",
+      ],
+      conclusion:
+        "That’s why we’ll keep going. Because every voice lifted against GBV adds to a chorus that can no longer be ignored.",
+    },
+    imgGallery: [gbvImg1, gbvImg2],
+  },
+  {
+    img: leadImg,
+    title:
+      "When a King Speaks: The Power of Leadership in Ending Violence Against Women and Girls",
+    slug: "power-of-leadership",
+    shortText:
+      "As part of our “Voices Against VAWG” project—supported by the Nigerian Women’s Trust Fund—we visited the palace of His Royal Highness Gabriel Nwite Ngele, the traditional ruler of Oriuzor Autonomous Community in Ezza North Local Government Area.",
+    fullText: {
+      paragraphs: [
+        "There are moments in our work at HerRise that reaffirm exactly why we do what we do. One of those moments happened recently in a quiet, yet powerful corner of Ebonyi State.",
+        "As part of our “Voices Against VAWG” project—supported by the Nigerian Women’s Trust Fund—we visited the palace of His Royal Highness Gabriel Nwite Ngele, the traditional ruler of Oriuzor Autonomous Community in Ezza North Local Government Area. Our goal? To seek royal consent and community buy-in for an important conversation: engaging men as allies in the fight against violence directed at women and girls.",
+        "What we received was more than consent—it was a declaration.",
+        "With sincerity and strength, HRH Gabriel Ngele pledged his full support to the cause. But he didn’t stop there. In a striking display of inclusion, he revealed that four women serve in his royal cabinet—and invited them to join the discussion immediately. Right there, in the palace, the conversation expanded to include women who are often unheard in spaces of power.",
+        "That moment was more than symbolic. It was transformational.",
+        "Because when leaders speak up, people listen. When men join the conversation, the narrative begins to shift. And when communities come together, cycles of silence begin to break.",
+        "At HerRise, we believe that real change begins at the grassroots—with honest conversations, bold leadership, and communities that refuse to look the other way. It’s not just about events or projects. It’s about voices—rising, again and again, until violence against women and girls is no longer normalized or ignored.",
+        "This work requires all of us.",
+        "To every man: You have a role to play.",
+        "To every leader: Your voice carries weight.",
+        "To every community: Change is possible—when we choose it.",
+      ],
+      conclusion:
+        "Let’s continue to raise our voices. Let’s stand together. One voice. One community. One step closer to a safer world for women and girls.",
+    },
+    imgGallery: [leadImg, leadImg2],
+  },
   {
     img: b2s,
     title:
