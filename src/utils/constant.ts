@@ -54,9 +54,11 @@ const images = [
   img40,
   img45,
   img13,
+  vo2,
   img46,
   img47,
   img41,
+  hb3,
   img44,
   img42,
   img10,
@@ -99,8 +101,81 @@ import leadImg from "@/assets/images/leadership/l2.jpeg";
 import leadImg2 from "@/assets/images/leadership/l3.jpeg";
 import gbvImg1 from "@/assets/images/GBV/g2.jpeg";
 import gbvImg2 from "@/assets/images/GBV/g3.jpeg";
+import hb1 from "@/assets/images/heartbeat/h2.jpeg";
+import hb2 from "@/assets/images/heartbeat/h3.jpeg";
+import hb3 from "@/assets/images/heartbeat/h1.jpeg";
+import vo1 from "@/assets/images/voice/v3.jpeg";
+import vo2 from "@/assets/images/voice/v2.jpeg";
+import vo3 from "@/assets/images/voice/v1.jpeg";
 
 export const ProgramsBlock = [
+  {
+    img: vo2,
+    title: "Unlearning Silence, Relearning Protection",
+    slug: "relearning-protection",
+    shortText:
+      "Violence against women and girls isn’t just a private matter—it’s a cultural wound. One that festers in silence, in complicity, in the casual acceptance of harmful norms passed down like family heirlooms....",
+    fullText: {
+      paragraphs: [
+        "Violence against women and girls isn’t just a private matter—it’s a cultural wound. One that festers in silence, in complicity, in the casual acceptance of harmful norms passed down like family heirlooms. But what if communities could unlearn that silence? What if the men entrusted with tradition chose, instead, to protect?",
+        "At HerRise Foundation, we believe they can. And we saw it firsthand in Oriuzor Autonomous Community, Ebonyi State, Nigeria.",
+        "With support from the Nigerian Women Trust Fund, we gathered not just to speak, but to stir something deeper—to ignite the conversations that challenge old beliefs and awaken new responsibilities. We brought together community leaders and men to talk about violence against women and girls not as a women’s issue, but as a communal betrayal that demands communal healing.",
+        "It wasn’t easy. These are conversations steeped in generations of silence. But slowly, we saw change flicker in the room—in the way questions were asked, in the way listening deepened, in the way heads began to nod in recognition that this, too, is their fight.",
+        "Because change doesn’t begin in policies or hashtags. It begins when a father decides his daughter’s safety matters. When a chief invites women into his council. When a boy grows up seeing a man say, “Not in my house. Not in my community.”",
+        "We are not just raising awareness. We are unlearning silence. We are relearning what it means to protect.",
+      ],
+      conclusion:
+        "And in Oriuzor, something ancient shifted—where once there was silence, now there is a village learning to stand.",
+    },
+    imgGallery: [vo1, vo2, vo3],
+  },
+  {
+    img: vo1,
+    title: "In the Village Where Silence Was Law, A New Voice Emerged.",
+    slug: "new-voice-emerge",
+    shortText:
+      "There are villages where silence becomes a way of survival. Places where pain is passed down like inheritance—quiet, unchallenged, normalized. Oriuzor Village in Ezza North LGA, Ebonyi State, has known such silence...",
+    fullText: {
+      paragraphs: [
+        "There are villages where silence becomes a way of survival. Places where pain is passed down like inheritance—quiet, unchallenged, normalized. Oriuzor Village in Ezza North LGA, Ebonyi State, has known such silence. But something remarkable happened when HerRise Foundation visited this resilient community. That silence cracked—and voices rose.",
+        "Backed by the Voices Against VAWG project with support from the Nigerian Women Trust Fund, our mission was clear: to bring the conversation about Gender-Based Violence (GBV) to the heart of rural communities, starting with honest, human dialogue.",
+        "The numbers are staggering. Globally, one in every three women has experienced physical or sexual violence in her lifetime—most often from someone she knows. Here in Nigeria, the 2018 National Demographic and Health Survey revealed that 30% of women aged 15–49 have experienced physical violence. Yet behind these statistics lie deeper truths—unreported cases, systemic silence, and a cultural web that often traps women in cycles of abuse with nowhere to turn.",
+        "Oriuzor was no exception. And yet, as we gathered with villagers—elders, parents, young people—we didn’t encounter resistance. We encountered readiness. Readiness to listen. To ask hard questions. To unlearn. And slowly, to speak.",
+        "Our team facilitated open discussions in the local dialect, grounding global issues in local reality. We didn’t come as outsiders to instruct, but as partners in dialogue. We shared survivor-centered messages: that seeking help is not shameful, that silence protects no one, and that every woman and girl deserves to feel safe in her own home and community.",
+        "What stood out most wasn’t just the willingness to engage—it was the depth of it. Men asked how they could better support their wives and daughters. Mothers, some emotional, shared how fear had shaped their own girlhoods. Young women stepped forward with curiosity and conviction. There was laughter, tension, release—and above all, hope.",
+        "These are the moments that defy statistics. Because change isn’t always loud. It doesn’t always wear a badge or arrive with a speech. Sometimes it begins in small village squares, where people gather under a tree to talk about what was once unspeakable.",
+        "And that’s exactly what Oriuzor did. They talked. They listened. They began to see. We didn’t just witness a sensitization session—we witnessed a shift. A reawakening. And maybe, just maybe, the beginning of a new tradition—where protection replaces silence, and healing begins where harm once hid.",
+      ],
+      conclusion:
+        "HerRise Foundation will continue to walk alongside communities like Oriuzor. Because the future we fight for—one free of violence, stigma, and fear—will be built not only in city halls or conference rooms, but in the quiet bravery of villages finding their voice",
+    },
+    imgGallery: [vo1, vo2, vo3],
+  },
+  {
+    img: hb1,
+    title:
+      "“Who Will Speak for Her?” – Listening to the Heartbeat of a Community",
+    slug: "listening-to-the-heartbeat",
+    shortText:
+      "There’s a question we often ask when we enter new communities: “If a woman in this place is hurt, who will speak for her?” At Community Primary School in Ugalaba, Ezza North, we didn't have to wait long for answers.",
+    fullText: {
+      paragraphs: [
+        "There’s a question we often ask when we enter new communities: “If a woman in this place is hurt, who will speak for her?”",
+        "At Community Primary School in Ugalaba, Ezza North, we didn’t have to wait long for answers",
+        "The staff and parents didn’t just listen. They leaned in. They questioned. They reflected. They cared.",
+        "We also sat down for one-on-one interviews, where some shared personal thoughts and experiences. These were not always easy conversations—but they were deeply human and incredibly necessary. What emerged was a clear truth: communities want to do better. They just need the space, the support, and the tools to begin.",
+        "And that’s what we’re here for.",
+        "Because gender-based violence isn’t a problem to be solved in isolation. It requires all of us—parents, teachers, traditional leaders, young people—to unlearn harmful norms, listen actively, and take a stand.",
+        "Let’s leave behind the idea that change only comes from the top.",
+        "In Ugalaba, it was parents with folded arms and furrowed brows, teachers leaning in with real concern, and voices once hesitant now growing bold—that’s where the work began.",
+        "Change doesn’t always roar. Sometimes, it begins as a quiet question at a PTA meeting. A story shared in confidence. A decision not to look away.",
+        "That’s the kind of change we saw in Ugalaba—and it’s the kind we believe in. Not performative. Not temporary. But rooted, rising from the inside out.",
+      ],
+      conclusion:
+        "Because when a community starts to care out loud, everything shifts.",
+    },
+    imgGallery: [hb1, hb2, hb3],
+  },
   {
     img: gbvImg1,
     title:
