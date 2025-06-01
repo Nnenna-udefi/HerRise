@@ -35,10 +35,10 @@ export const HomeContent = () => {
         variants={cardVariants}
         initial="hidden"
         animate="visible"
-        className="md:flex block reveal justify-between gap-10 text-gray-800  py-20"
+        className="lg:flex block reveal justify-between gap-10 text-gray-800  py-20"
       >
         <Image src={heroImg} alt="hero" width={500} height={500} />
-        <div>
+        <div className="md:pt-4 lg:pt-0 ">
           <h1 className="md:text-5xl mt-4 md:mt-0 text-4xl tracking-widest font-bold leading-12">
             HerRise FOUNDATION
           </h1>
@@ -128,7 +128,7 @@ export const HomeContent = () => {
         className="flex flex-col reveal items-center pb-10"
       >
         <h2 className="md:text-6xl pb-4 text-4xl font-bold">Programs</h2>
-        <div className="flex md:flex-row flex-col gap-10 text-gray-700 pt-6">
+        <div className="flex lg:flex-row flex-col gap-10 text-gray-700 pt-6">
           {ProgramsBlock.filter((_, index) => [1, 3, 5].includes(index)).map(
             (program, index) => (
               <motion.div

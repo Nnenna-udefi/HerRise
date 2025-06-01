@@ -52,7 +52,7 @@ export const ProgramDetails = () => {
           {program?.fullText?.conclusion}
         </p>
 
-        <div className="md:grid grid-cols-2 place-items-center my-6">
+        <div className="lg:grid grid-cols-2 place-items-center my-6">
           {program.imgGallery.map((imgG, index) => (
             <div key={index} className="md:w-[500px] w-full">
               <Image

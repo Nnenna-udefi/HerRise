@@ -39,7 +39,7 @@ export const Nav = () => {
           return (
             <li
               key={items.id}
-              className={`hover:text-gray-600 lg:text-xl text-base ${
+              className={`hover:border-b lg:text-xl text-base ${
                 isActive ? `font-extrabold border-b border-white` : ``
               }  `}
             >

@@ -17,7 +17,7 @@ export const Footer = () => {
           className=""
         />
 
-        <div className="md:flex justify-between gap-10 block ">
+        <div className="md:grid lg:grid-cols-3 md:grid-cols-2 justify-between gap-10 block ">
           <div className="p-0">
             <h1 className="text-3xl text-gray-800">Join Our Transformation</h1>
             <Link

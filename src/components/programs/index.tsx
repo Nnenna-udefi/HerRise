@@ -2,12 +2,19 @@
 import { ProgramsBlock } from "@/utils/constant";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { setupRevealOnScroll } from "../utils/revealOnScroll";
+import { LoadingSpinner } from "../ui/loadingSpinner";
+import { useRouter } from "next/navigation";
 
-export const Programs = () => {
+export const Programs = ({
+  setLoading,
+}: {
+  setLoading: (val: boolean) => void;
+}) => {
+  const router = useRouter();
   const [visiblePrograms, setVisiblePrograms] = useState(6);
+
   useEffect(() => {
     const cleanup = setupRevealOnScroll();
     return cleanup;
@@ -46,27 +53,31 @@ export const Programs = () => {
               key={program.title}
               className=" reveal block my-6 gap-10 p-2 bg-gray-100"
             >
-              <div>
+              <div className="flex justify-center">
                 <Image
                   src={program.img}
                   alt={program.title}
                   // layout="responsive"
                   width={500}
                   height={500}
-                  className="md:pb-0 pb-4 w-full md:w-[500px] md:h-[500px]"
+                  className="md:pb-0 pb-4 w-full md:w-fit md:h-[500px]"
                 />
               </div>
               <div className="leading-8 my-auto pt-4">
                 <h2 className="text-3xl">{program.title}</h2>
                 <p className="py-6">{program.shortText}</p>
-                <Link
-                  href={`/programs/${program.slug}`}
-                  className="flex justify-center"
+
+                <button
+                  onClick={() => {
+                    setLoading(true);
+                    setTimeout(() => {
+                      router.push(`/programs/${program.slug}`);
+                    }, 500);
+                  }}
+                  className="rounded-2xl border mt-8 hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3"
                 >
-                  <button className="rounded-2xl border mt-8 hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3">
-                    See More
-                  </button>
-                </Link>
+                  See More
+                </button>
               </div>
             </div>
           ))}
