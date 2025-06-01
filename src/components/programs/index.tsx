@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { setupRevealOnScroll } from "../utils/revealOnScroll";
-import { LoadingSpinner } from "../ui/loadingSpinner";
 import { useRouter } from "next/navigation";
 
 export const Programs = ({
