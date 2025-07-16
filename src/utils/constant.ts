@@ -52,11 +52,13 @@ const images = [
   img49,
   img43,
   img40,
+  pad1,
   img45,
   img13,
   vo2,
   img46,
   img47,
+  pad2,
   img41,
   hb3,
   img44,
@@ -107,8 +109,38 @@ import hb3 from "@/assets/images/heartbeat/h1.jpeg";
 import vo1 from "@/assets/images/voice/v3.jpeg";
 import vo2 from "@/assets/images/voice/v2.jpeg";
 import vo3 from "@/assets/images/voice/v1.jpeg";
+import pad1 from "@/assets/images/menstrual hygeine 2025/1.jpeg";
+import pad2 from "@/assets/images/menstrual hygeine 2025/2.jpeg";
+import pad3 from "@/assets/images/menstrual hygeine 2025/3.jpeg";
 
 export const ProgramsBlock = [
+  {
+    img: pad1,
+    title: "More Than Pads: A Mission Rooted in Our Lived Experience",
+    slug: "more-than-pads",
+    shortText:
+      "For some, it's a distant issue — something they read about, hear about, or contribute to once in a while. But for us at HerRise Foundation, it's deeply personal. Because long before we began championing menstrual equity, we lived the very realities we now fight to change.",
+    fullText: {
+      paragraphs: [
+        "For some, it's a distant issue — something they read about, hear about, or contribute to once in a while. But for us at HerRise Foundation, it's deeply personal. Because long before we began championing menstrual equity, we lived the very realities we now fight to change.",
+        "We weren’t just donating 480 sanitary pads. We were standing in the gap for every girl who has ever used tissue, rags, or old cloths because pads were a luxury. We were showing up for the girl who missed school every month because she feared the shame of being stained, mocked, or embarrassed. We were fighting for the girl we once were.",
+        "This year, through our Pad Up the Girl Child 2025 initiative, we reached hundreds of girls across underserved communities—providing not just 480 sanitary pads, but restoring dignity, safeguarding education, and rekindling confidence.",
+        "Because no girl should ever have to choose between her period and her future. We’ve sat with girls whose eyes held the silent shame of their first menstruation. We’ve heard the stories of missed classes, lost confidence, and dreams pushed aside simply because something natural was treated like a curse.",
+        "But now, we’re seeing something different.",
+
+        "We’re seeing smiles instead of shame. Confidence replacing fear. Full classrooms instead of absentee lists.",
+
+        "Every pad we handed out carried a message: You matter. Your dignity matters. Your education matters.",
+
+        "This is what impact from lived experience looks like. This is why we do what we do.",
+
+        "We're still reminiscing on the joy that filled the air during that outreach—the giggles, the tight hugs, the questions asked boldly during our menstrual health sessions. The kind of joy that doesn't fade. And as we look ahead, our mission remains unchanged: to ensure that no girl is left behind because of something as natural as her period.",
+      ],
+      conclusion:
+        "Thank you to everyone who supported this mission. Let’s keep rewriting the narrative, one girl at a time. #HerRiseFoundation #PadUpTheGirlChild #MenstrualEquity #KeepGirlsInSchool #HerRiseImpact #DignityPeriodEducation #GirlsDeserveBetter #LivedExperienceLeadership",
+    },
+    imgGallery: [pad1, pad2, pad3],
+  },
   {
     img: vo2,
     title: "Unlearning Silence, Relearning Protection",
