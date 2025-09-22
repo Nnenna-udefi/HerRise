@@ -6,7 +6,7 @@ import im2 from "@/assets/images/girl-child-2023/1.jpeg";
 import im3 from "@/assets/images/girl-child-2024/1.jpeg";
 import im4 from "@/assets/images/lets-talk-period/2.jpeg";
 import im5 from "@/assets/images/menstral-hygiene-2023/3.jpeg";
-import im6 from "@/assets/images/modle-girls-2023/1.jpeg";
+import im6 from "@/assets/images/book3.jpeg";
 import Image from "next/image";
 import heroImg from "@/assets/images/breaking-silence/7.png";
 import { ProgramsBlock } from "@/utils/constant";
@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import { setupRevealOnScroll } from "./utils/revealOnScroll";
 import { Impact } from "./impact";
 import announcement from "@/assets/images/announcement.jpeg";
+import bookLaunch from "@/assets/images/book-lauch.jpeg";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -69,7 +70,7 @@ export const HomeContent = () => {
         variants={cardVariants}
         initial="hidden"
         animate="visible"
-        className="flex flex-col reveal justify-center items-center pb-10"
+        className="flex flex-col reveal justify-center items-center md:pt-10 pb-10"
       >
         <h2 className="md:text-6xl py-4 text-4xl font-bold text-center font-recoleta">
           Join Our Community
@@ -163,6 +164,36 @@ export const HomeContent = () => {
             See More
           </button>
         </Link>
+      </motion.div>
+
+      {/* News */}
+
+      <motion.div className="reveal md:flex block gap-10 justify-between items-center">
+        <Image
+          src={bookLaunch}
+          alt="book launch"
+          width={500}
+          height={500}
+          // className="w-full"
+        />
+
+        <div className="font-bold md:pt-0 pt-10">
+          <h3 className="font-black text-2xl md:text-4xl font-roboto">
+            Exciting News!!! &#127881; &#127881;
+          </h3>
+          <p className="text-[#fc1997] py-2 text-3xl font-extrabold lg:text-6xl">
+            Launching the GBV Club Manual: A Living Legacy
+          </p>
+          <p className="text-[#fc1997] py-4 text-2xl lg:text-4xl">
+            We are thrilled to announce, 📖 The GBV Club Manual is here.
+          </p>
+          <p className="text-lg md:text-2xl">
+            This manual is more than ink and paper. It is a tool of resistance.
+            It is a beacon of hope. It is the voice we once wished someone gave
+            us when we faced systemic barriers. With this, students will not
+            just learn about gender-based violence
+          </p>
+        </div>
       </motion.div>
 
       <motion.div className="reveal flex justify-center items-center">

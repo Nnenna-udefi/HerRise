@@ -51,6 +51,7 @@ const images = [
   gbvImg2,
   img49,
   img43,
+  bookLaunch1,
   img40,
   pad1,
   img45,
@@ -65,6 +66,7 @@ const images = [
   img42,
   img10,
   img11,
+  bookLaunch2,
   img12,
   img14,
   img15,
@@ -112,8 +114,34 @@ import vo3 from "@/assets/images/voice/v1.jpeg";
 import pad1 from "@/assets/images/menstrual hygeine 2025/1.jpeg";
 import pad2 from "@/assets/images/menstrual hygeine 2025/2.jpeg";
 import pad3 from "@/assets/images/menstrual hygeine 2025/3.jpeg";
+import bookLaunch from "@/assets/images/book-lauch.jpeg";
+import bookLaunch1 from "@/assets/images/book1.jpeg";
+import bookLaunch2 from "@/assets/images/book2.jpeg";
+import bookLaunch3 from "@/assets/images/book3.jpeg";
 
 export const ProgramsBlock = [
+  {
+    img: bookLaunch,
+    title: "Launching the GBV Club Manual: A Living Legacy",
+    slug: "gbv-club-manual",
+    shortText:
+      "History is being made. We didn’t just write a book; we carved out a roadmap for generations. After months of walking into classrooms… After training 163 teachers across 10 schools in Ebonyi State to stand as GBV first responders… After listening to stories that broke us and fueled us at the same time…",
+    fullText: {
+      paragraphs: [
+        "History is being made. We didn’t just write a book; we carved out a roadmap for generations.",
+        "After months of walking into classrooms… After training 163 teachers across 10 schools in Ebonyi State to stand as GBV first responders… After listening to stories that broke us and fueled us at the same time…",
+        "We realized something deeper: Change must be rooted in sustainability. That is why today, we launch the GBV Club Manual not as pages bound together, but as a living legacy.",
+        "This manual is more than ink and paper. It is a tool of resistance. It is a beacon of hope. It is the voice we once wished someone gave us when we faced systemic barriers. With this, students will not just learn about gender-based violence.",
+        "They will lead clubs in their schools and communities. They will grow into voices strong enough to break cycles of silence. They will pass it on until violence against women and girls becomes nothing but a shadow of the past.",
+        "At HerRise Foundation, we don’t lead from observation — we lead from experience. We transform the pain we once carried into solutions that outlive us. And this milestone, made possible through the generous support of the Nigerian Women Trust Fund, is proof that when we dare to act, we leave footprints for generations yet unborn.",
+        "📖 The GBV Club Manual is here.",
+      ],
+      lists: ["A guide.", "A movement.", "A legacy."],
+      conclusion:
+        "#HerRiseFoundation #VoicesAgainstVAWG #GBVPrevention #GenderEquality #SocialImpact #EndVAWG #BookLaunch",
+    },
+    imgGallery: [bookLaunch1, bookLaunch2, bookLaunch3],
+  },
   {
     img: pad1,
     title: "More Than Pads: A Mission Rooted in Our Lived Experience",

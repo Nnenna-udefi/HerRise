@@ -50,7 +50,7 @@ export const Programs = ({
           {ProgramsBlock.slice(0, visiblePrograms).map((program) => (
             <div
               key={program.title}
-              className=" reveal block my-6 gap-10 p-2 bg-gray-100"
+              className=" reveal block my-6 gap-10 p-4 bg-gray-100"
             >
               <div className="flex justify-center">
                 <Image
