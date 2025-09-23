@@ -169,15 +169,18 @@ export const HomeContent = () => {
       {/* News */}
 
       <motion.div className="reveal md:flex block gap-10 justify-between items-center">
-        <Link href={"/programs/gbv-club-manual"} className="w-full">
-          <Image
-            src={bookLaunch}
-            alt="book launch"
-            width={500}
-            height={500}
-            className="w-full"
-          />
-        </Link>
+        <div className="w-full">
+          {" "}
+          <Link href={"/programs/gbv-club-manual"}>
+            <Image
+              src={bookLaunch}
+              alt="book launch"
+              width={500}
+              height={500}
+              className="w-full"
+            />
+          </Link>
+        </div>
 
         <div className="font-bold md:pt-0 pt-10">
           <h3 className="font-black text-2xl md:text-4xl font-roboto">
