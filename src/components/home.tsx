@@ -169,7 +169,7 @@ export const HomeContent = () => {
       {/* News */}
 
       <motion.div className="reveal md:flex block gap-10 justify-between items-center">
-        <Link href={"/programs/gbv-club-manual"}>
+        <Link href={"/programs/gbv-club-manual"} className="w-full">
           <Image
             src={bookLaunch}
             alt="book launch"
