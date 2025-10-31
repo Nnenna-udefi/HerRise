@@ -198,6 +198,14 @@ export const HomeContent = () => {
             us when we faced systemic barriers. With this, students will not
             just learn about gender-based violence
           </p>
+
+          <div className="pt-4">
+            <Link href="https://drive.google.com/file/d/1JXwx1qzDg0xpnjXT_2rON_RyuUgzh7K8/view?usp=drivesdk">
+              <button className="rounded-2xl transition-all duration-300 hover:scale-105 hover:border hover:text-black hover:bg-white bg-pnk text-white border-gray-500 px-10 py-4">
+                Read Here
+              </button>
+            </Link>
+          </div>
         </div>
       </motion.div>
 
