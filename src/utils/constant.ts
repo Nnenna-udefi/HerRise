@@ -118,8 +118,31 @@ import bookLaunch from "@/assets/images/book-lauch.jpeg";
 import bookLaunch1 from "@/assets/images/book1.jpeg";
 import bookLaunch2 from "@/assets/images/book2.jpeg";
 import bookLaunch3 from "@/assets/images/book3.jpeg";
-
+import campaign from "@/assets/images/campaign/campaign.jpeg";
+import campaign2 from "@/assets/images/campaign/campaign2.jpeg";
+import campaign3 from "@/assets/images/campaign/campaign3.jpeg";
 export const ProgramsBlock = [
+  {
+    img: campaign,
+    title:
+      "Ending the Culture of Silence: HerRise Foundation Sparks a Powerful Community Conversation",
+    slug: "vawg-campaign",
+    shortText:
+      "As part of our HerRise Voices Against VAWG Campaign, we took the conversation to the airwaves in a powerful live radio session titled “Ending the Culture of Silence: Holding Perpetrators Accountable and Protecting Girls — Not Their Abusers.” What happened on that show reminded us why this work cannot stop ...",
+    fullText: {
+      paragraphs: [
+        "As part of our HerRise Voices Against VAWG Campaign, we took the conversation to the airwaves in a powerful live radio session titled “Ending the Culture of Silence: Holding Perpetrators Accountable and Protecting Girls — Not Their Abusers.” What happened on that show reminded us why this work cannot stop. The phone lines lit up — 15 callers from across the community shared their experiences, asked bold questions, challenged harmful beliefs, and affirmed the urgency of ending violence against women and girls. It became clear that people are tired of the silence, tired of the excuses, tired of the culture that protects abusers while blaming victims.",
+        "During the conversation, we confronted the damaging idea that girls should stay quiet to “protect the family name,” or that their clothing, behaviour, or presence somehow caused the abuse. We made it clear: silence has never protected girls — it has only protected perpetrators.",
+        "Girls deserve support, not interrogation. Communities must stop covering up for abusers, even when the perpetrator is “one of ours.” Real protection begins with accountability, and accountability begins when we stop asking, “What did she do?” and start asking the real question: “Why did he choose violence?”",
+        "This radio session deepened our commitment at the HerRise Foundation. Every contribution reminded us why we exist — to give girls the power to speak, to ensure their voices are heard, to break generational silence, and to challenge harmful norms that normalize abuse. We left the studio more resolved than ever: to continue creating safe spaces for girls, educating communities, confronting victim-blaming, and shifting the culture from silence to justice.",
+        "This was more than a radio show — it was a community awakening. And we are only just beginning.",
+      ],
+
+      conclusion:
+        "#HerRiseFoundation #VoicesAgainstVAWG #GBVPrevention #GenderEquality #SocialImpact #EndVAWG ",
+    },
+    imgGallery: [campaign, campaign2, campaign3],
+  },
   {
     img: bookLaunch,
     title: "Launching the GBV Club Manual: A Living Legacy",
