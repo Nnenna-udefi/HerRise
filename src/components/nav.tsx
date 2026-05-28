@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import WhiteLogo from "@/assets/images/logo-white.png";
+import WhiteLogo from "@/assets/images/logo-white2.png";
 import PinkLogo from "@/assets/images/logo-pink.png";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -22,13 +22,13 @@ export const Nav = () => {
     { id: 5, text: "Contact Us", href: "/contact-us" },
   ];
   return (
-    <div className="bg-pnk px-8 z-50  flex justify-between  text-white items-center fixed w-full">
+    <div className="bg-pnk px-8 py-4 z-50 flex justify-between text-white items-center fixed w-full">
       <Link href="/">
         <Image
           src={WhiteLogo}
           alt="logo"
           width={200}
-          height={100}
+          height={50}
           className="lg:w-32 w-20"
         />
       </Link>

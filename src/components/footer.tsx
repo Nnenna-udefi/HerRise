@@ -19,7 +19,9 @@ export const Footer = () => {
 
         <div className="md:grid lg:grid-cols-3 md:grid-cols-2 justify-between gap-10 block ">
           <div className="p-0">
-            <h1 className="text-3xl text-gray-800">Join Our Transformation</h1>
+            <h1 className="text-3xl pb-3 text-gray-800">
+              Join Our Transformation
+            </h1>
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
@@ -33,7 +35,7 @@ export const Footer = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
               target="_blank"
             >
-              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  border mt-2 md:mt-8 border-gray-500 px-8 py-3">
+              <button className="rounded-2xl hover:border-none hover:bg-pnk hover:text-white  border mt-2 md:mt-4 border-gray-500 px-8 py-3">
                 Become a Partner
               </button>
             </Link>
@@ -45,7 +47,12 @@ export const Footer = () => {
             <Link href="/about/#founder">Meet The Founder</Link>
             <Link href="/programs">Our Programs</Link>
             <Link href="/programs">Impact Stories</Link>
-            <Link href="/contact-us/#donate">Donate</Link>
+            <Link
+              href="https://paystack.shop/pay/herrisefoundation"
+              target="_blank"
+            >
+              Donate
+            </Link>
           </div>
 
           <div className="md:mt-0 mt-6 mb-6">

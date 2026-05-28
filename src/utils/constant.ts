@@ -120,7 +120,8 @@ import bookLaunch2 from "@/assets/images/book2.jpeg";
 import bookLaunch3 from "@/assets/images/book3.jpeg";
 import campaign from "@/assets/images/campaign/campaign.jpeg";
 import campaign2 from "@/assets/images/campaign/campaign2.jpeg";
-import campaign3 from "@/assets/images/campaign/campaign3.jpeg";
+// import campaign3 from "@/assets/images/campaign/campaign3.jpeg";
+
 export const ProgramsBlock = [
   {
     img: campaign,
@@ -141,7 +142,7 @@ export const ProgramsBlock = [
       conclusion:
         "#HerRiseFoundation #VoicesAgainstVAWG #GBVPrevention #GenderEquality #SocialImpact #EndVAWG ",
     },
-    imgGallery: [campaign, campaign2, campaign3],
+    imgGallery: [campaign, campaign2],
   },
   {
     img: bookLaunch,

@@ -57,9 +57,9 @@ export const Programs = ({
                   src={program.img}
                   alt={program.title}
                   // layout="responsive"
-                  width={500}
-                  height={500}
-                  className="md:pb-0 pb-4 w-full md:w-fit md:h-[500px]"
+                  width={300}
+                  height={300}
+                  className="md:pb-0 pb-4 w-[500px] md:w-fit md:h-[500px]"
                 />
               </div>
               <div className="leading-8 my-auto pt-4">

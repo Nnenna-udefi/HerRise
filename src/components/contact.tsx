@@ -75,7 +75,7 @@ export const Contact = () => {
             Your support helps us reach more communities and expand our impact.
           </p>
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdoS_wJtgZddOwUNETzdiHdINg9dsf8zYOQOgvIJfqby6NguQ/viewform?usp=sf_link"
+            href="https://paystack.shop/pay/herrisefoundation"
             target="_blank"
           >
             <button className="text-pnk hover:border-none hover:bg-pnk hover:text-white rounded-2xl mr-4 border mt-8 border-gray-800 px-8 py-3">
