@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Nunito } from "next/font/google";
+import { Nunito, Roboto, Merriweather } from "next/font/google";
 import "./globals.css";
+import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,16 +20,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const roboto = localFont({
-  src: "./fonts/roboto-regular.woff2",
+const roboto = Roboto({
   variable: "--font-roboto",
-  weight: "400 600",
+  weight: ["400", "600"],
 });
 
-const merriweather = localFont({
-  src: "./fonts/merriweather-regular.woff2",
+const merriweather = Merriweather({
   variable: "--font-merriweather",
-  weight: "400 600",
+  weight: ["400", "600"],
 });
 const recoleta = localFont({
   src: "./fonts/Recoleta-RegularDEMO.otf",
@@ -51,7 +51,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${nunito.variable} ${geistMono.variable} ${roboto.variable} ${merriweather.variable} ${recoleta.variable} antialiased`}
       >
-        {children}
+        <Nav />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

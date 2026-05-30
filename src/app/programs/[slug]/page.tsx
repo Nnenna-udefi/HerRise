@@ -1,18 +1,20 @@
 "use client";
-import { Footer } from "@/components/footer";
-import { Nav } from "@/components/nav";
+import React, { use } from "react";
 import { ProgramDetails } from "@/components/programs/programDetails";
 
-import React from "react";
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
 
-const ProgramDetailsPage = () => {
+const ProgramDetailsPage = ({ params }: PageProps) => {
+  // Safe async unwrap of standard params inside Next.js 15+ patterns
+  const resolvedParams = use(params);
+
   return (
     <div>
-      <Nav />
       <div className="bg-white">
-        <ProgramDetails />
+        <ProgramDetails slug={resolvedParams.slug} />
       </div>
-      <Footer />
     </div>
   );
 };

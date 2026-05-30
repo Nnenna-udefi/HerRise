@@ -30,6 +30,7 @@ export const Nav = () => {
           width={200}
           height={50}
           className="lg:w-32 w-20"
+          priority
         />
       </Link>
 

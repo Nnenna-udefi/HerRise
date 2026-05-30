@@ -25,7 +25,7 @@ export const Impact = () => {
           <CalendarDaysIcon className="text-pnk" size={50} />
           <h3 className="text-center">Years of Advocacy</h3>
           <p>
-            <CountUp end={3} duration={2} enableScrollSpy />+
+            <CountUp end={4} duration={2} enableScrollSpy />+
           </p>
         </div>
         <div className="bg-gray-100 p-6 transition-all duration-300 hover:scale-105 rounded-lg shadow-md flex flex-col items-center justify-center gap-4">

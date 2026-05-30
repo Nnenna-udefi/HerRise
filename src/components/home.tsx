@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import im1 from "@/assets/images/menstral-hygiene-2023/8.jpeg";
 import im2 from "@/assets/images/girl-child-2023/1.jpeg";
 import im3 from "@/assets/images/girl-child-2024/1.jpeg";
@@ -15,6 +15,7 @@ import { setupRevealOnScroll } from "./utils/revealOnScroll";
 import { Impact } from "./impact";
 import announcement from "@/assets/images/announcement.jpeg";
 import bookLaunch from "@/assets/images/book-lauch.jpeg";
+import { client } from "@/sanity/lib/client";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -26,8 +27,28 @@ const cardVariants = {
 };
 
 export const HomeContent = () => {
+  const [sanityPrograms, setSanityPrograms] = useState<any[]>([]);
+
   useEffect(() => {
     const cleanup = setupRevealOnScroll();
+
+    // Fetch the 1st, 3rd, and 5th items directly via GROQ selectors
+    async function fetchHomepagePrograms() {
+      try {
+        const query = `*[_type == "program"] | order(_createdAt asc) {
+  title,
+  "slug": slug.current,
+  "img": img.asset->url
+}[@index == 0 || @index == 2 || @index == 4]`;
+        const data = await client.fetch(query);
+        // Clean out empty/null values if you have fewer than 5 items published
+        setSanityPrograms(data.filter(Boolean));
+      } catch (error) {
+        console.error("Error fetching homepage programs from Sanity:", error);
+      }
+    }
+
+    fetchHomepagePrograms();
     return cleanup;
   }, []);
   return (
@@ -130,35 +151,34 @@ export const HomeContent = () => {
       >
         <h2 className="md:text-6xl pb-4 text-4xl font-bold">Programs</h2>
         <div className="flex lg:flex-row flex-col gap-10 text-gray-700 pt-6">
-          {ProgramsBlock.filter((_, index) => [1, 3, 5].includes(index)).map(
-            (program, index) => (
-              <motion.div
-                key={program.title}
-                className="my-6 md:w-[300px] w-full rounded-xl bg-gray-100 flex flex-col h-full hover:shadow-lg hover:scale-105 transition-transform"
-                variants={cardVariants}
-                custom={index}
-              >
-                <Image
-                  src={program.img}
-                  alt={program.title}
-                  width={500}
-                  height={500}
-                  className="rounded-t-xl w-full h-[200px] object-cover"
-                />
-                <div className="p-4">
-                  <h2 className="text-2xl overflow-hidden text-ellipsis">
-                    {program.title}
-                  </h2>
-                  <Link href={`/programs/${program.slug}`}>
-                    <button className="font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-b border-gray-500 py-2">
-                      Learn More
-                    </button>
-                  </Link>
-                </div>
-              </motion.div>
-            )
-          )}
+          {sanityPrograms.map((program, index) => (
+            <motion.div
+              key={program.slug}
+              className="my-6 md:w-[300px] w-full rounded-xl bg-gray-100 flex flex-col h-full hover:shadow-lg hover:scale-105 transition-transform"
+              variants={cardVariants}
+              custom={index}
+            >
+              <Image
+                src={program.img || "/placeholder.jpg"}
+                alt={program.title}
+                width={500}
+                height={500}
+                className="rounded-t-xl w-full h-[200px] object-cover"
+              />
+              <div className="p-4 flex flex-col justify-between flex-grow">
+                <h2 className="text-2xl overflow-hidden text-ellipsis line-clamp-2">
+                  {program.title}
+                </h2>
+                <Link href={`/programs/${program.slug}`}>
+                  <button className="font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-b border-gray-500 py-2 mt-4 text-left">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </motion.div>
+          ))}
         </div>
+
         <Link href="/programs">
           <button className="rounded-2xl transition-all duration-300 hover:scale-105 border text-black hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-10 py-4">
             See More

@@ -8,8 +8,10 @@ import { useRouter } from "next/navigation";
 
 export const Programs = ({
   setLoading,
+  programsList,
 }: {
   setLoading: (val: boolean) => void;
+  programsList: any[];
 }) => {
   const router = useRouter();
   const [visiblePrograms, setVisiblePrograms] = useState(6);
@@ -46,44 +48,50 @@ export const Programs = ({
           action, menstrual hygiene, and reproductive health rights
         </p>
 
-        <div className="text-gray-700 gap-6 block md:grid grid-cols-2 py-14">
-          {ProgramsBlock.slice(0, visiblePrograms).map((program) => (
+        <div className="text-gray-700 gap-6 block md:grid md:grid-cols-2 lg:grid-cols-3 py-14">
+          {programsList.slice(0, visiblePrograms).map((program) => (
             <div
               key={program.title}
-              className=" reveal block my-6 gap-10 p-4 bg-gray-100"
+              className="reveal flex flex-col my-6 p-4 bg-gray-100"
             >
-              <div className="flex justify-center">
+              {/* Image Container matching card width */}
+              <div className="w-full">
                 <Image
                   src={program.img}
                   alt={program.title}
-                  // layout="responsive"
-                  width={300}
-                  height={300}
-                  className="md:pb-0 pb-4 w-[500px] md:w-fit md:h-[500px]"
+                  width={600} // Higher base resolution for sharp scaling up to container size
+                  height={600}
+                  className="w-full h-auto aspect-square object-cover rounded-lg"
                 />
               </div>
-              <div className="leading-8 my-auto pt-4">
-                <h2 className="text-3xl">{program.title}</h2>
-                <p className="py-6">{program.shortText}</p>
 
-                <button
-                  onClick={() => {
-                    setLoading(true);
-                    setTimeout(() => {
-                      router.push(`/programs/${program.slug}`);
-                    }, 500);
-                  }}
-                  className="rounded-2xl border mt-8 hover:border-none hover:bg-pnk hover:text-white border-gray-500 px-8 py-3"
-                >
-                  See More
-                </button>
+              {/* Content Container */}
+              <div className="leading-8 pt-4 flex flex-col flex-grow justify-between">
+                <div>
+                  <h2 className="text-3xl font-semibold">{program.title}</h2>
+                  <p className="py-6 text-gray-600">{program.shortText}</p>
+                </div>
+
+                <div>
+                  <button
+                    onClick={() => {
+                      setLoading(true);
+                      setTimeout(() => {
+                        router.push(`/programs/${program.slug}`);
+                      }, 500);
+                    }}
+                    className="rounded-2xl border mt-4 hover:border-transparent hover:bg-pnk hover:text-white border-gray-500 px-8 py-3 transition-colors duration-200"
+                  >
+                    See More
+                  </button>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </motion.section>
 
-      {visiblePrograms < ProgramsBlock.length && (
+      {visiblePrograms < programsList.length && (
         <div className="pb-10 flex items-center justify-center bg-white">
           <button
             onClick={() => setVisiblePrograms((prev) => prev + 6)}
